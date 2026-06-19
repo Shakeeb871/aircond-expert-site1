@@ -24,7 +24,7 @@ if (!$authed) {
     button{width:100%;padding:13px;border:none;border-radius:11px;background:#0E3988;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
     .err{color:#b23b3b;font-size:13px;margin-bottom:10px}
   </style></head><body>
-    <form method="post" action="/leads-admin.php">
+    <form method="post" action="/leads.php">
       <h1>Leads access</h1>
       <p>Enter your admin key to view enquiries.</p>
       <?php if ($tried): ?><div class="err">Wrong key. Try again.</div><?php endif; ?>

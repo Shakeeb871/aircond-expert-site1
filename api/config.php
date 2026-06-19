@@ -29,7 +29,7 @@ return [
     'pass'    => 'YOUR_DB_PASSWORD',
   ],
 
-  // Secret key to open the leads viewer: /leads-admin.php?key=THIS
+  // Password for the leads viewer at /leads.php  (a login box will ask for it).
   // CHANGE this to a long random string.
   'admin_key' => 'change-this-to-a-long-random-key',
 ];

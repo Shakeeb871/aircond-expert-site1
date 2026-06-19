@@ -1,17 +1,27 @@
 Options -Indexes +FollowSymLinks
 DirectoryIndex index.php
 ErrorDocument 404 /404.php
+ServerSignature Off
 
 RewriteEngine On
 RewriteBase /
 
-# --- protect internal folders/files ---
+# --- protect internal folders ---
 RewriteRule ^(inc|data)/ - [F,L]
+
+# --- block sensitive / source files ---
 <FilesMatch "(config\.php|leads\.log)$">
   Require all denied
 </FilesMatch>
+<FilesMatch "(?i)\.(sql|log|md|ya?ml|ini|sh|bak|inc)$">
+  Require all denied
+</FilesMatch>
+# block dotfiles (.git, .gitignore, .env, .htaccess, etc.)
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
 
-# --- force HTTPS (enable once SSL is active) ---
+# --- force HTTPS ---
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
@@ -26,7 +36,19 @@ RewriteRule ^services/?$ services.php [L]
 RewriteRule ^services/([a-z0-9-]+)/?$ service.php?s=$1 [L,QSA]
 RewriteRule ^blog/?$ blog.php [L]
 RewriteRule ^blog/([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
+RewriteRule ^leads/?$ leads.php [L]
 RewriteRule ^(about|contact|coverage|amc|privacy|terms|pdpa|cookie)/?$ $1.php [L]
+
+# --- security headers ---
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
+</IfModule>
 
 # --- caching for static assets ---
 <IfModule mod_expires.c>
