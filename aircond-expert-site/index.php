@@ -167,13 +167,36 @@ include __DIR__.'/inc/header.php';
 <!-- BRANDS -->
 <section class="section brands" id="brands" style="padding:62px 0">
   <div class="wrap head">
-    <div><h2 style="font-size:clamp(24px,3vw,34px);margin-top:10px">We service every major aircond brand</h2></div>
+    <div>
+      <span class="eyebrow">Trusted Across All Brands</span>
+      <h2 style="font-size:clamp(24px,3vw,34px);margin-top:10px">We service every major aircond brand</h2>
+      <p class="brands-sub">From Daikin to Mitsubishi — our certified technicians know every system inside and out.</p>
+    </div>
     <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Ask about your unit</span></a>
   </div>
-  <div class="wrap" style="max-width:none;padding:0"><div class="mq-mask"><div class="marquee">
-    <span class="bchip">Daikin</span><span class="bchip">Panasonic</span><span class="bchip">Mitsubishi Electric</span><span class="bchip">York</span><span class="bchip">Acson</span><span class="bchip">Hitachi</span><span class="bchip">LG</span><span class="bchip">Samsung</span><span class="bchip">Midea</span>
-    <span class="bchip">Daikin</span><span class="bchip">Panasonic</span><span class="bchip">Mitsubishi Electric</span><span class="bchip">York</span><span class="bchip">Acson</span><span class="bchip">Hitachi</span><span class="bchip">LG</span><span class="bchip">Samsung</span><span class="bchip">Midea</span>
-  </div></div></div>
+  <div class="wrap" style="max-width:none;padding:0">
+    <div class="mq-mask"><div class="brand-marquee">
+      <div class="blogo"><img src="/assets/img/brands/mitsubishi-electric.png" alt="Mitsubishi Electric" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/panasonic.png" alt="Panasonic" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/hitachi.png" alt="Hitachi" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/daikin.png" alt="Daikin" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/york.png" alt="York" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/acson.png" alt="Acson" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/lg.png" alt="LG" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/samsung.png" alt="Samsung" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/midea.png" alt="Midea" loading="lazy"></div>
+      <!-- duplicate set for seamless marquee -->
+      <div class="blogo"><img src="/assets/img/brands/mitsubishi-electric.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/panasonic.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/hitachi.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/daikin.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/york.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/acson.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/lg.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/samsung.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/midea.png" alt="" loading="lazy"></div>
+    </div></div>
+  </div>
 </section>
 
 <!-- WHY US -->
