@@ -16,4 +16,4 @@ include __DIR__.'/inc/header.php';
     <div class="amc"><div class="tier">Gold</div><div class="amt">5 to 8<em> units</em></div><p class="desc">Landed homes. Premium response window and full-home coverage.</p><a href="/contact/" class="btn btn-line"><span class="btn-txt">Get a quote</span></a></div>
   </div>
 </div></section>
-<?php include __DIR__.'/inc/footer.php'; ?>
+<?php include __DIR__ . '/inc/testimonials.php'; ?>

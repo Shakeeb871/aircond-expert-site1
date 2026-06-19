@@ -61,4 +61,5 @@ $more = array_slice($more, 0, 3, true);
   </div>
 </div></section>
 
-<?php include __DIR__ . '/inc/footer.php'; ?>
+<?php include __DIR__ . '/inc/testimonials.php'; ?>
+

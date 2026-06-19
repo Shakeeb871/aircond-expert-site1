@@ -24,4 +24,4 @@ include __DIR__.'/inc/header.php';
     <a href="/contact/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Klang</a>
   </div>
 </div></section>
-<?php include __DIR__.'/inc/footer.php'; ?>
+<?php include __DIR__ . '/inc/testimonials.php'; ?>

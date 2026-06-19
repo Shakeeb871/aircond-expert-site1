@@ -32,4 +32,4 @@ include __DIR__.'/inc/header.php';
     <a href="/contact/" class="btn btn-navy"><span class="btn-txt">Get in touch</span></a>
   </div>
 </div></section>
-<?php include __DIR__.'/inc/footer.php'; ?>
+<?php include __DIR__ . '/inc/testimonials.php'; ?>

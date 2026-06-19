@@ -266,7 +266,7 @@ include __DIR__.'/inc/header.php';
         <span class="u-brand"><img src="/assets/img/brands/4.png" alt="Daikin" loading="lazy" onerror="this.style.display='none'"></span>
         <h3>Daikin Inverter Split</h3>
         <p>Quiet, energy-efficient cooling with R32 gas, ideal for bedrooms and living rooms.</p>
-        <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Get a quote</span></a>
+        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="unit">
@@ -275,7 +275,7 @@ include __DIR__.'/inc/header.php';
         <span class="u-brand"><img src="/assets/img/brands/2.png" alt="Panasonic" loading="lazy" onerror="this.style.display='none'"></span>
         <h3>Panasonic Nanoe-X</h3>
         <p>Air-purifying inverter unit that keeps rooms fresh while cutting running costs.</p>
-        <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Get a quote</span></a>
+        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
     <div class="unit">
@@ -284,7 +284,7 @@ include __DIR__.'/inc/header.php';
         <span class="u-brand"><img src="/assets/img/brands/1.png" alt="Mitsubishi Electric" loading="lazy" onerror="this.style.display='none'"></span>
         <h3>Mitsubishi Starmex</h3>
         <p>Premium build with strong, even cooling and a long, reliable service life.</p>
-        <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Get a quote</span></a>
+        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div></div>

@@ -64,3 +64,22 @@
   var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(render,150);});
   render();reset();
 })();
+
+/* Testimonials auto slider — advances right-to-left, pauses on hover */
+(function(){
+  document.querySelectorAll('.ttrack').forEach(function(track){
+    var vp=track.parentElement, cards=track.children;
+    if(!cards.length) return;
+    var idx=0, timer=null;
+    function step(){var r=cards[0].getBoundingClientRect(),g=parseFloat(getComputedStyle(track).gap)||22;return r.width+g;}
+    function perView(){return innerWidth>900?3:(innerWidth>600?2:1);}
+    function maxIdx(){return Math.max(0,cards.length-perView());}
+    function render(){idx=Math.max(0,Math.min(idx,maxIdx()));track.style.transform='translateX('+(-idx*step())+'px)';}
+    function go(){idx=idx>=maxIdx()?0:idx+1;render();}
+    function start(){clearInterval(timer);timer=setInterval(go,4000);}
+    vp.addEventListener('mouseenter',function(){clearInterval(timer);});
+    vp.addEventListener('mouseleave',start);
+    var rt;addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){idx=0;render();},150);});
+    render();start();
+  });
+})();
