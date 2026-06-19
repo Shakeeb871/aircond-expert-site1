@@ -1,0 +1,43 @@
+Options -Indexes +FollowSymLinks
+DirectoryIndex index.php
+ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteBase /
+
+# --- protect internal folders/files ---
+RewriteRule ^(inc|data)/ - [F,L]
+<FilesMatch "(config\.php|leads\.log)$">
+  Require all denied
+</FilesMatch>
+
+# --- force HTTPS (enable once SSL is active) ---
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- add trailing slash to clean URLs (not files) ---
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]+|/)$
+RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+# --- routes ---
+RewriteRule ^services/?$ services.php [L]
+RewriteRule ^services/([a-z0-9-]+)/?$ service.php?s=$1 [L,QSA]
+RewriteRule ^(about|contact|coverage|amc|privacy|terms|pdpa|cookie)/?$ $1.php [L]
+
+# --- caching for static assets ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType image/png "access plus 6 months"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/svg+xml "access plus 6 months"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|jpg|jpeg|png|webp|svg)$">
+    Header set Cache-Control "public, max-age=15552000"
+  </FilesMatch>
+</IfModule>
