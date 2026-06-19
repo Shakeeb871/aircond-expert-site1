@@ -38,7 +38,8 @@ include __DIR__.'/inc/header.php';
         </div>
         <div class="bc-field"><label for="message">What is happening?</label><textarea id="message" name="message" rows="3" placeholder="e.g. Not cooling, water dripping, 2 units"></textarea></div>
         <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn btn-wa bc-submit"><span class="btn-txt">Send Message</span></button>
+        <button type="submit" class="btn btn-navy bc-submit"><span class="btn-txt">Send Message</span></button>
+        <button type="button" class="btn btn-wa wa-send bc-submit" style="margin-top:10px"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Send on WhatsApp</span></button>
         <p class="bc-note">No spam. We only use this to reply to your request.</p>
       </form>
     </div>

@@ -1,12 +1,41 @@
 <?php
-/* Simple, key-protected leads viewer.  Open:  /leads-admin.php?key=YOUR_ADMIN_KEY */
+/* Key-protected leads viewer. Shows a login box instead of a dead-end. */
 $cfg = require __DIR__ . '/api/config.php';
 
-$key = $_GET['key'] ?? '';
-if (!is_string($cfg['admin_key']) || !hash_equals($cfg['admin_key'], (string)$key)) {
-  http_response_code(403);
-  exit('Forbidden');
+$adminKey = is_string($cfg['admin_key'] ?? null) ? $cfg['admin_key'] : '';
+$given = $_POST['key'] ?? ($_GET['key'] ?? '');
+$authed = ($adminKey !== '' && hash_equals($adminKey, (string)$given));
+
+function h($v){ return htmlspecialchars((string)$v, ENT_QUOTES); }
+
+if (!$authed) {
+  // login form (no "Forbidden" dead-end)
+  $tried = ($given !== '');
+  ?>
+  <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow"><title>Leads login</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Arial,sans-serif;background:#0E3988;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center}
+    form{background:#fff;padding:34px 30px;border-radius:16px;box-shadow:0 30px 60px -30px rgba(0,0,0,.5);width:min(360px,90vw)}
+    h1{font-size:18px;margin:0 0 4px;color:#0c1830}
+    p{font-size:13px;color:#5b6b82;margin:0 0 18px}
+    input{width:100%;box-sizing:border-box;padding:13px 14px;border:1.5px solid #dce7f1;border-radius:11px;font-size:15px;margin-bottom:12px}
+    button{width:100%;padding:13px;border:none;border-radius:11px;background:#0E3988;color:#fff;font-weight:700;font-size:15px;cursor:pointer}
+    .err{color:#b23b3b;font-size:13px;margin-bottom:10px}
+  </style></head><body>
+    <form method="post" action="/leads-admin.php">
+      <h1>Leads access</h1>
+      <p>Enter your admin key to view enquiries.</p>
+      <?php if ($tried): ?><div class="err">Wrong key. Try again.</div><?php endif; ?>
+      <input type="password" name="key" placeholder="Admin key" autofocus autocomplete="off">
+      <button type="submit">View leads</button>
+    </form>
+  </body></html>
+  <?php
+  exit;
 }
+
 if (empty($cfg['db']['enabled'])) {
   exit('Database is not enabled yet. In api/config.php set db.enabled => true and fill in your MySQL details.');
 }
@@ -24,7 +53,6 @@ try {
 } catch (Throwable $e) {
   $err = $e->getMessage();
 }
-function h($v){ return htmlspecialchars((string)$v, ENT_QUOTES); }
 ?>
 <!DOCTYPE html>
 <html lang="en"><head>

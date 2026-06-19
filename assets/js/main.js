@@ -83,3 +83,19 @@
     render();start();
   });
 })();
+
+/* "Send on WhatsApp" buttons inside forms — compose a message from the fields */
+(function(){
+  document.querySelectorAll('.wa-send').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var form=btn.closest('form'); if(!form)return;
+      function v(n){var el=form.querySelector('[name="'+n+'"]');return el?(''+el.value).trim():'';}
+      var t='Hi Aiqon Quick Cool, I would like a quote.';
+      [['Name','name'],['Phone','phone'],['Email','email'],['Area','area'],['Service','service'],['Message','message']].forEach(function(p){
+        var val=v(p[1]); if(val) t+='\n'+p[0]+': '+val;
+      });
+      var num=btn.getAttribute('data-wa')||'60123456789';
+      window.open('https://wa.me/'+num+'?text='+encodeURIComponent(t),'_blank');
+    });
+  });
+})();
