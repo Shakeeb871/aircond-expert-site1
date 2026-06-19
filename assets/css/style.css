@@ -317,21 +317,31 @@ a{color:inherit;text-decoration:none}
 .cta h2{color:#fff;max-width:20ch}
 .cta .ctab{display:flex;gap:13px;flex-wrap:wrap}
 
-footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14.5px}
-.fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:40px}
-.fb .brand{margin-bottom:14px}
-.fb .brand .wm .t1{color:#fff}.fb .brand .wm .t2{color:#90aacb}
-.fb p{max-width:34ch;color:#9fbad6;margin-bottom:14px}
-.fb .fcontact div{display:flex;gap:9px;align-items:flex-start;margin-bottom:9px}
-.fb .fcontact svg{width:16px;height:16px;color:var(--yellow);flex:0 0 auto;margin-top:4px}
-.fcol h4{font-family:var(--d);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
-.fcol a{display:block;color:#a9c2e0;margin-bottom:10px;transition:.15s}
-.fcol a:hover{color:var(--yellow)}
-.fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:46px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:#86a2c2}
-.fbot .soc{display:flex;gap:10px}
-.fbot .soc a{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#cfe1f3}
-.fbot .soc a:hover{background:var(--yellow);color:var(--navy-ink)}
-.fbot .soc svg{width:17px;height:17px}
+footer{position:relative;background:linear-gradient(180deg,var(--navy-deep),var(--navy-ink));color:#a9c2e0;padding:0 0 26px;font-size:14.5px}
+footer::before{content:"";display:block;height:3px;background:linear-gradient(90deg,var(--yellow),rgba(252,207,8,0) 60%)}
+.fgrid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:44px;padding-top:60px}
+.flogo{display:inline-block;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 16px 34px -18px rgba(0,0,0,.6);margin-bottom:18px}
+.flogo img{height:48px;width:auto;display:block}
+.fb p{max-width:40ch;color:#9fbad6;margin-bottom:20px;line-height:1.75}
+.fcontact{display:grid;gap:11px;margin-bottom:20px}
+.fcontact a,.fcontact div{display:flex;gap:12px;align-items:center;color:#cfe0f5}
+.fcontact a:hover{color:var(--yellow)}
+.fic{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;flex:0 0 auto;color:var(--yellow)}
+.fic svg{width:17px;height:17px}
+.fsoc{display:flex;gap:10px}
+.fsoc a{width:40px;height:40px;border-radius:11px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:#cfe1f3;transition:transform .2s,background .2s,color .2s}
+.fsoc a:hover{background:var(--yellow);color:var(--navy-ink);border-color:transparent;transform:translateY(-3px)}
+.fsoc svg{width:18px;height:18px}
+.fcol h4{font-family:var(--d);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;padding-bottom:10px;position:relative}
+.fcol h4::after{content:"";position:absolute;left:0;bottom:0;width:26px;height:2px;background:var(--yellow);border-radius:2px}
+.fcol a{display:flex;align-items:center;gap:9px;color:#a9c2e0;margin-bottom:12px;transition:color .16s}
+.fcol a svg{width:13px;height:13px;color:var(--yellow);opacity:.65;transition:transform .16s,opacity .16s;flex:0 0 auto}
+.fcol a:hover{color:#fff}
+.fcol a:hover svg{transform:translateX(3px);opacity:1}
+.fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:13px;color:#86a2c2}
+.fbadges{display:flex;flex-wrap:wrap;gap:8px}
+.fbadges span{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:6px 13px;font-size:12px;font-weight:600;color:#cfe0f5}
+.fbadges svg{width:14px;height:14px;color:var(--yellow)}
 
 .wafab{position:fixed;right:20px;bottom:84px;z-index:80;width:56px;height:56px;border-radius:50%;background:var(--yellow);color:var(--navy-ink);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px -10px rgba(252,207,8,.85)}
 .wafab svg{width:30px;height:30px}
