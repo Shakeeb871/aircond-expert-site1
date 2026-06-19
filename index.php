@@ -167,13 +167,36 @@ include __DIR__.'/inc/header.php';
 <!-- BRANDS -->
 <section class="section brands" id="brands" style="padding:62px 0">
   <div class="wrap head">
-    <div><h2 style="font-size:clamp(24px,3vw,34px);margin-top:10px">We service every major aircond brand</h2></div>
+    <div>
+      <span class="eyebrow">Trusted Across All Brands</span>
+      <h2 style="font-size:clamp(24px,3vw,34px);margin-top:10px">We service every major aircond brand</h2>
+      <p class="brands-sub">From Daikin to Mitsubishi — our certified technicians know every system inside and out.</p>
+    </div>
     <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Ask about your unit</span></a>
   </div>
-  <div class="wrap" style="max-width:none;padding:0"><div class="mq-mask"><div class="marquee">
-    <span class="bchip">Daikin</span><span class="bchip">Panasonic</span><span class="bchip">Mitsubishi Electric</span><span class="bchip">York</span><span class="bchip">Acson</span><span class="bchip">Hitachi</span><span class="bchip">LG</span><span class="bchip">Samsung</span><span class="bchip">Midea</span>
-    <span class="bchip">Daikin</span><span class="bchip">Panasonic</span><span class="bchip">Mitsubishi Electric</span><span class="bchip">York</span><span class="bchip">Acson</span><span class="bchip">Hitachi</span><span class="bchip">LG</span><span class="bchip">Samsung</span><span class="bchip">Midea</span>
-  </div></div></div>
+  <div class="wrap" style="max-width:none;padding:0">
+    <div class="mq-mask"><div class="brand-marquee">
+      <div class="blogo"><img src="/assets/img/brands/1.png" alt="Mitsubishi Electric" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/2.png" alt="Panasonic" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/3.png" alt="Hitachi" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/4.png" alt="Daikin" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/5.png" alt="York" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/6.png" alt="Hisense" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/7.png" alt="Midea" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/8.png" alt="Acson" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/9.png" alt="Haier" loading="lazy"></div>
+      <!-- duplicate set for seamless marquee -->
+      <div class="blogo"><img src="/assets/img/brands/1.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/2.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/3.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/4.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/5.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/6.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/7.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/8.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/9.png" alt="" loading="lazy"></div>
+    </div></div>
+  </div>
 </section>
 
 <!-- WHY US -->
@@ -346,7 +369,7 @@ include __DIR__.'/inc/header.php';
     <details class="faq"><summary>How fast can you come? <span class="pl">+</span></summary><div class="ans">Next-day is standard, and same-day where a slot is open. Emergencies like an active leak or a unit fully down get prioritised, and we tell you the real arrival time.</div></details>
     <details class="faq"><summary>How does pricing work? <span class="pl">+</span></summary><div class="ans">Most jobs we can quote on WhatsApp from a photo. Where we cannot, we attend, diagnose and quote on the spot. You approve the price before any work starts.</div></details>
     <details class="faq"><summary>Do you charge a call-out fee? <span class="pl">+</span></summary><div class="ans">We confirm any call-out fee before we come, and it is waived when you proceed with the recommended repair. Whatever it is, you always know it upfront.</div></details>
-    <details class="faq"><summary>What brands do you service? <span class="pl">+</span></summary><div class="ans">All major brands including Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, LG, Samsung and Midea, for service, repair and installation.</div></details>
+    <details class="faq"><summary>What brands do you service? <span class="pl">+</span></summary><div class="ans">All major brands including Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea, for service, repair and installation.</div></details>
   </div></div>
 </section>
 
