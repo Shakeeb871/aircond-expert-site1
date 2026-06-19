@@ -7,25 +7,59 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: /contact/'); exit
 if (!empty($_POST['company'])) { header('Location: /contact/?sent=1'); exit; }
 
 function clean($k){ return isset($_POST[$k]) ? trim(strip_tags($_POST[$k])) : ''; }
-$name=clean('name'); $phone=clean('phone'); $area=clean('area');
+$name=clean('name'); $phone=clean('phone'); $email=clean('email'); $area=clean('area');
 $service=clean('service'); $message=clean('message');
+$ip = $_SERVER['REMOTE_ADDR'] ?? '';
+$source = '';
+if (!empty($_SERVER['HTTP_REFERER'])) {
+  $source = substr((string)(parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH) ?: ''), 0, 160);
+}
 
 if ($name === '' || $phone === '') { header('Location: /contact/?err=1'); exit; }
 
+// 1) Save to the database (best-effort; never blocks the enquiry)
+if (!empty($cfg['db']['enabled'])) {
+  try {
+    $d = $cfg['db'];
+    $pdo = new PDO(
+      "mysql:host={$d['host']};dbname={$d['name']};charset=utf8mb4",
+      $d['user'], $d['pass'],
+      [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_TIMEOUT => 5]
+    );
+    $pdo->exec("CREATE TABLE IF NOT EXISTS leads (
+      id INT AUTO_INCREMENT PRIMARY KEY,
+      name VARCHAR(120) NOT NULL,
+      phone VARCHAR(40) NOT NULL,
+      email VARCHAR(160) NULL,
+      area VARCHAR(120) NULL,
+      service VARCHAR(120) NULL,
+      message TEXT NULL,
+      source VARCHAR(160) NULL,
+      ip VARCHAR(45) NULL,
+      created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+    $st = $pdo->prepare("INSERT INTO leads (name,phone,email,area,service,message,source,ip)
+                         VALUES (?,?,?,?,?,?,?,?)");
+    $st->execute([$name,$phone,$email,$area,$service,$message,$source,$ip]);
+  } catch (Throwable $e) {
+    @file_put_contents($cfg['log_file'], '[DB ERROR] '.$e->getMessage()."\n", FILE_APPEND);
+  }
+}
+
+// 2) Always keep a local text backup
 $lines = [
-  'Name: '.$name, 'Phone: '.$phone, 'Area: '.$area,
-  'Service: '.$service, 'Message: '.$message,
-  'Time: '.date('Y-m-d H:i:s'), 'IP: '.(isset($_SERVER['REMOTE_ADDR'])?$_SERVER['REMOTE_ADDR']:''),
+  'Name: '.$name, 'Phone: '.$phone, 'Email: '.$email, 'Area: '.$area,
+  'Service: '.$service, 'Message: '.$message, 'Source: '.$source,
+  'Time: '.date('Y-m-d H:i:s'), 'IP: '.$ip,
 ];
 $body = implode("\n", $lines);
-
-// 1) always keep a local backup
 @file_put_contents($cfg['log_file'], $body."\n----\n", FILE_APPEND);
 
-// 2) try to email it
+// 3) Email it to you
 $subject = 'New enquiry: '.$name.' ('.($service ?: 'general').')';
+$replyTo = ($email && filter_var($email, FILTER_VALIDATE_EMAIL)) ? $email : $cfg['from_email'];
 $headers = 'From: '.$cfg['site_name'].' <'.$cfg['from_email'].">\r\n".
-           'Reply-To: '.$cfg['from_email']."\r\n".
+           'Reply-To: '.$replyTo."\r\n".
            'Content-Type: text/plain; charset=UTF-8';
 @mail($cfg['to_email'], $subject, $body, $headers);
 
