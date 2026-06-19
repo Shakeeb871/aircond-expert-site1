@@ -11,15 +11,14 @@ include __DIR__.'/inc/header.php';
   <img class="hero-bg" src="/assets/img/hero.jpg" alt="" loading="eager" onerror="this.style.display='none'">
   <div class="glow"></div>
   <div class="wrap">
-    <div>
-      <h1>Live better. Work better. <span class="y">Sleep cooler.</span></h1>
-      <p class="s">24-hour aircond service, repair, chemical wash, gas top-up and installation. Licensed technicians, fixed pricing you agree first, and a real reply on WhatsApp within 15 minutes.</p>
-      <div class="chips">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> All major brands</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> 1-year warranty</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> No bait pricing</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Same-day where slots allow</span>
+    <div class="hero-copy">
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Licensed technicians</span>
+        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg> 4.9 on Google</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 24/7 callouts</span>
       </div>
+      <h1>Live better. Work better. <span class="y">Sleep cooler.</span></h1>
+      <p class="s">24-hour aircond service, repair, chemical wash, gas top-up and installation across the Klang Valley. Fixed pricing you agree first, and a real reply on WhatsApp within 15 minutes.</p>
       <div class="hero-cta">
         <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
         <a href="tel:+60123456789" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 12-345 6789</span></a>
@@ -28,7 +27,7 @@ include __DIR__.'/inc/header.php';
     <div class="bookcard reveal" id="book">
       <div class="bc-top">
         <span class="pulse"><i></i> 15-min reply</span>
-        <h3>Schedule your free estimate</h3>
+        <h3>Schedule your <em>FREE</em> estimate today</h3>
         <p>Tell us what you need. A real person replies on WhatsApp, fast.</p>
       </div>
       <div class="bc-body">
@@ -74,27 +73,27 @@ include __DIR__.'/inc/header.php';
   <div class="wrap"><div class="svc-grid reveal">
     <a href="/services/aircond-service/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Service photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Aircond Service" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/></svg></span><h3>Aircond Service</h3><p>Filter, coil and drainage care that brings cooling back and keeps your bill down.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>Aircond Service</h3><p>Filter, coil and drainage care that brings cooling back and keeps your bill down.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
     <a href="/services/chemical-wash/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Chemical Wash photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical Wash" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l8-8M14 4l6 6-9 9H5v-6z"/></svg></span><h3>Chemical Wash</h3><p>A 90 to 120 minute deep clean of coil and blower that revives weak, smelly units.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>Chemical Wash</h3><p>A 90 to 120 minute deep clean of coil and blower that revives weak, smelly units.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
     <a href="/services/aircond-repair/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Repair photo</span></span><img src="/assets/img/aircond-repair.jpg" alt="Aircond Repair" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/></svg></span><h3>Aircond Repair</h3><p>Capacitor, PCB, fan motor, compressor and gas faults, diagnosed and fixed the same visit.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>Aircond Repair</h3><p>Capacitor, PCB, fan motor, compressor and gas faults, diagnosed and fixed the same visit.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
     <a href="/services/installation/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Installation photo</span></span><img src="/assets/img/installation.jpg" alt="Installation" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="11" rx="2"/><path d="M6 12h12M9 20h6"/></svg></span><h3>Installation</h3><p>Wall split supply and fit with OEM brackets, copper pipe and a full cooling test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>Installation</h3><p>Wall split supply and fit with OEM brackets, copper pipe and a full cooling test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
     <a href="/services/gas-top-up/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Gas Top-Up photo</span></span><img src="/assets/img/gas-top-up.jpg" alt="Gas Top-Up" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s5 5 5 9a5 5 0 01-10 0c0-4 5-9 5-9z"/></svg></span><h3>Gas Top-Up</h3><p>Leak check first, then the correct refrigerant (R32, R410A, R22) and a pressure test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>Gas Top-Up</h3><p>Leak check first, then the correct refrigerant (R32, R410A, R22) and a pressure test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
     <a href="/services/general-cleaning/" class="svc">
       <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>General Cleaning photo</span></span><img src="/assets/img/general-cleaning.jpg" alt="General Cleaning" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></span><h3>General Cleaning</h3><p>Filter and cover wash that restores airflow and keeps your room air fresh between services.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+      <div class="svc-body"><h3>General Cleaning</h3><p>Filter and cover wash that restores airflow and keeps your room air fresh between services.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
   </div></div>
 </section>
@@ -312,21 +311,6 @@ include __DIR__.'/inc/header.php';
   </div></div>
 </section>
 
-<!-- FAQ -->
-<section class="section faqsec" id="faq">
-  <div class="wrap center">
-    <span class="eyebrow">Got Questions?</span>
-    <h2 style="margin:12px 0 0">We have got your answers</h2>
-  </div>
-  <div class="wrap"><div class="faq-wrap">
-    <details class="faq" open><summary>Do you serve my area? <span class="pl">+</span></summary><div class="ans">We cover Kuala Lumpur, Petaling Jaya, Mont Kiara, Bangsar, Subang Jaya, Shah Alam, Cheras, Kajang and Klang as standard. Outside that, WhatsApp us your postcode and we will quote on a case basis.</div></details>
-    <details class="faq"><summary>How fast can you come? <span class="pl">+</span></summary><div class="ans">Next-day is standard, and same-day where a slot is open. Emergencies like an active leak or a unit fully down get prioritised, and we tell you the real arrival time.</div></details>
-    <details class="faq"><summary>How does pricing work? <span class="pl">+</span></summary><div class="ans">Most jobs we can quote on WhatsApp from a photo. Where we cannot, we attend, diagnose and quote on the spot. You approve the price before any work starts.</div></details>
-    <details class="faq"><summary>Do you charge a call-out fee? <span class="pl">+</span></summary><div class="ans">We confirm any call-out fee before we come, and it is waived when you proceed with the recommended repair. Whatever it is, you always know it upfront.</div></details>
-    <details class="faq"><summary>What brands do you service? <span class="pl">+</span></summary><div class="ans">All major brands including Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea, for service, repair and installation.</div></details>
-  </div></div>
-</section>
-
 <!-- INSIGHTS / BLOG -->
 <section class="section insights" id="insights">
   <div class="wrap center">
@@ -350,40 +334,25 @@ include __DIR__.'/inc/header.php';
   </div></div>
 </section>
 
-<!-- GET IN TOUCH -->
-<section class="section getintouch" id="contact">
+<!-- GET IN TOUCH (FAQ) -->
+<section class="section getintouch" id="faq">
   <div class="wrap getintouch-grid">
     <div class="git-info reveal">
-      <span class="eyebrow">Get In Touch</span>
+      <span class="eyebrow">Got Questions?</span>
       <h2>Get in touch with our experts</h2>
-      <p class="lead">Have a question or need a quote? Our team is ready to help with professional cooling solutions across the Klang Valley.</p>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><h4>Service area</h4><p>Across the Klang Valley, Malaysia</p></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span><div><h4>Phone</h4><a href="tel:+60123456789">+60 12-345 6789</a></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></span><div><h4>Email</h4><a href="mailto:hello@aircondexpert.my">hello@aircondexpert.my</a></div></div>
-      <div class="ci"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><h4>Opening hours</h4><p>Mon to Sun, 8am to 10pm</p></div></div>
+      <p class="lead">Here are the answers our customers ask for most. Still not sure? Message our team on WhatsApp and a real person replies within 15 minutes.</p>
+      <div class="git-cta">
+        <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Ask on WhatsApp</span></a>
+        <a href="tel:+60123456789" class="btn btn-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call us</span></a>
+      </div>
     </div>
-    <form class="git-form reveal" action="/api/contact.php" method="post">
-      <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-      <div class="bc-row">
-        <div class="bc-field"><label for="gf-name">Full name</label><input id="gf-name" name="name" type="text" placeholder="Your name" required></div>
-        <div class="bc-field"><label for="gf-phone">Phone</label><input id="gf-phone" name="phone" type="tel" placeholder="01X-XXX XXXX" required></div>
-      </div>
-      <div class="bc-field"><label for="gf-email">Email</label><input id="gf-email" name="email" type="email" placeholder="you@example.com"></div>
-      <div class="bc-field"><label for="gf-service">Service needed</label>
-        <select id="gf-service" name="service">
-          <option value="" disabled selected>Select a service</option>
-          <option>Aircond Service</option>
-          <option>Chemical Wash</option>
-          <option>Aircond Repair</option>
-          <option>Installation</option>
-          <option>Gas Top-Up</option>
-          <option>General Cleaning</option>
-        </select>
-      </div>
-      <div class="bc-field"><label for="gf-msg">Message</label><textarea id="gf-msg" name="message" rows="4" placeholder="Tell us how we can help"></textarea></div>
-      <button type="submit" class="btn btn-navy" style="width:100%;justify-content:center"><span class="btn-txt">Send message</span></button>
-      <p class="bc-note">Prefer WhatsApp? <a href="https://wa.me/60123456789" style="color:var(--navy);font-weight:600">Message us here &rarr;</a></p>
-    </form>
+    <div class="git-faq reveal">
+      <details class="faq" open><summary>Do you serve my area? <span class="pl">+</span></summary><div class="ans">We cover Kuala Lumpur, Petaling Jaya, Mont Kiara, Bangsar, Subang Jaya, Shah Alam, Cheras, Kajang and Klang as standard. Outside that, WhatsApp us your postcode and we will quote on a case basis.</div></details>
+      <details class="faq"><summary>How fast can you come? <span class="pl">+</span></summary><div class="ans">Next-day is standard, and same-day where a slot is open. Emergencies like an active leak or a unit fully down get prioritised, and we tell you the real arrival time.</div></details>
+      <details class="faq"><summary>How does pricing work? <span class="pl">+</span></summary><div class="ans">Most jobs we can quote on WhatsApp from a photo. Where we cannot, we attend, diagnose and quote on the spot. You approve the price before any work starts.</div></details>
+      <details class="faq"><summary>Do you charge a call-out fee? <span class="pl">+</span></summary><div class="ans">We confirm any call-out fee before we come, and it is waived when you proceed with the recommended repair. Whatever it is, you always know it upfront.</div></details>
+      <details class="faq"><summary>What brands do you service? <span class="pl">+</span></summary><div class="ans">All major brands including Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea, for service, repair and installation.</div></details>
+    </div>
   </div>
 </section>
 

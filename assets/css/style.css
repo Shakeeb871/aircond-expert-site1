@@ -480,13 +480,16 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
    HOMEPAGE REDESIGN SECTIONS (navy/yellow theme)
    ============================================================ */
 
+/* Hero trust row */
+.hero-trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:20px}
+.hero-trust span{display:inline-flex;align-items:center;gap:8px;font-family:var(--d);font-weight:600;font-size:13.5px;color:#eaf2fb}
+.hero-trust svg{width:17px;height:17px;color:var(--yellow)}
+.bc-top h3 em{font-style:normal;color:var(--yellow)}
+
 /* Core services (elegant svc cards) */
 .core .eyebrow{justify-content:center}
 .core .svc{display:block;color:inherit}
 .core .svc-img{aspect-ratio:16/11}
-.core .svc-body{position:relative;padding-top:34px}
-.svc-ic{position:absolute;top:-26px;left:26px;width:52px;height:52px;border-radius:15px;background:linear-gradient(140deg,var(--navy),var(--navy-2));color:var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -12px rgba(14,57,136,.75)}
-.svc-ic svg{width:26px;height:26px}
 .core .svc .go{display:inline-flex;align-items:center;gap:7px;margin-top:4px;font-family:var(--d);font-weight:700;font-size:13.5px;color:var(--navy)}
 .core .svc .go svg{width:16px;height:16px;transition:transform .2s}
 .core .svc:hover .go svg{transform:translateX(4px)}
@@ -577,18 +580,14 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
 .bpost .bp-more svg{width:16px;height:16px;transition:transform .2s}
 .bpost:hover .bp-more svg{transform:translateX(4px)}
 
-/* Get in touch */
-.getintouch-grid{display:grid;grid-template-columns:1fr 470px;gap:48px;align-items:start}
+/* Get in touch (FAQ) */
+.getintouch-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:start}
+.git-info{position:sticky;top:104px}
 .git-info .eyebrow{margin-bottom:14px}
 .git-info h2{font-size:clamp(28px,3.4vw,40px);color:var(--navy-deep)}
-.git-info .lead{color:var(--muted);font-size:17px;margin:14px 0 26px;max-width:46ch}
-.git-info .ci{display:flex;gap:14px;align-items:flex-start;margin-bottom:20px}
-.git-info .ci .ic{width:48px;height:48px;border-radius:13px;background:var(--ice);color:var(--navy);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
-.git-info .ci .ic svg{width:23px;height:23px}
-.git-info .ci h4{font-size:15.5px;color:var(--navy-deep)}
-.git-info .ci p,.git-info .ci a{font-size:15px;color:var(--muted)}
-.git-info .ci a:hover{color:var(--navy)}
-.git-form{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:30px;box-shadow:var(--sh);display:grid;gap:14px}
+.git-info .lead{color:var(--muted);font-size:17px;margin:14px 0 24px;max-width:42ch}
+.git-cta{display:flex;flex-wrap:wrap;gap:12px}
+.git-faq .faq{margin-bottom:13px}
 
 /* Serving areas — dark band */
 .serving{background:linear-gradient(150deg,var(--navy) 0%,var(--navy-deep) 58%,var(--navy-ink) 100%);color:#fff;padding:88px 0;position:relative;overflow:hidden}
@@ -606,8 +605,8 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
   .core-grid,.units-grid,.offers-grid,.blog-grid{grid-template-columns:1fr 1fr}
   .comfort-grid{grid-template-columns:1fr;gap:36px}
   .ws-grid{grid-template-columns:1fr 1fr}
-  .getintouch-grid{grid-template-columns:1fr;gap:34px}
-  .git-form{max-width:560px}
+  .getintouch-grid{grid-template-columns:1fr;gap:30px}
+  .git-info{position:static}
   .serving-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:600px){
