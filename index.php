@@ -252,43 +252,40 @@ include __DIR__.'/inc/header.php';
   </div>
 </section>
 
-<!-- PREMIUM UNITS -->
-<section class="section units" id="units">
+<!-- WHAT'S INCLUDED -->
+<?php
+$svc = require __DIR__.'/data/services.php';
+$inclIcons = [
+  'aircond-service' => '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/>',
+  'aircond-repair'  => '<path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/>',
+  'installation'    => '<rect x="2" y="5" width="20" height="11" rx="2"/><path d="M6 12h12M9 20h6"/>',
+  'chemical-wash'   => '<path d="M3 21l8-8M14 4l6 6-9 9H5v-6z"/>',
+];
+?>
+<section class="section included-sec" id="included">
   <div class="wrap center">
-    <span class="eyebrow">Supply &amp; Install</span>
-    <h2 style="margin-top:12px">Premium AC units for any budget</h2>
-    <p class="sub">We supply and install genuine units from the brands we trust most, with a full cooling test on completion.</p>
+    <span class="eyebrow">What We Include</span>
+    <h2 style="margin-top:12px">What&rsquo;s Included in Our Services</h2>
+    <p class="sub">Exactly what you get on every visit &mdash; clear and upfront, handled by our own licensed, in-house technicians.</p>
   </div>
-  <div class="wrap"><div class="units-grid reveal">
-    <div class="unit">
-      <div class="u-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="7" rx="2"/><path d="M6 11h12"/></svg><span>Unit photo</span></span><img src="/assets/img/aircond_service.png" alt="Daikin split unit" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="u-body">
-        <span class="u-brand"><img src="/assets/img/brands/4.png" alt="Daikin" loading="lazy" onerror="this.style.display='none'"></span>
-        <h3>Daikin Inverter Split</h3>
-        <p>Quiet, energy-efficient cooling with R32 gas, ideal for bedrooms and living rooms.</p>
-        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  <div class="wrap"><div class="incl-grid reveal">
+    <?php foreach(['aircond-service','aircond-repair','installation','chemical-wash'] as $slug): $s = $svc[$slug]; ?>
+    <div class="incl-card">
+      <div class="incl-head">
+        <span class="incl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><?= $inclIcons[$slug] ?></svg></span>
+        <div><h3><?= htmlspecialchars($s['title']) ?></h3><p><?= htmlspecialchars($s['tagline']) ?></p></div>
       </div>
+      <ul class="incl-list">
+        <?php foreach($s['included'] as $item): ?>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> <?= htmlspecialchars($item) ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <a href="/services/<?= $slug ?>/" class="incl-link">View full details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
-    <div class="unit">
-      <div class="u-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="7" rx="2"/><path d="M6 11h12"/></svg><span>Unit photo</span></span><img src="/assets/img/aircond_service.png" alt="Panasonic split unit" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="u-body">
-        <span class="u-brand"><img src="/assets/img/brands/2.png" alt="Panasonic" loading="lazy" onerror="this.style.display='none'"></span>
-        <h3>Panasonic Nanoe-X</h3>
-        <p>Air-purifying inverter unit that keeps rooms fresh while cutting running costs.</p>
-        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-    <div class="unit">
-      <div class="u-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="7" rx="2"/><path d="M6 11h12"/></svg><span>Unit photo</span></span><img src="/assets/img/aircond_service.png" alt="Mitsubishi split unit" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="u-body">
-        <span class="u-brand"><img src="/assets/img/brands/1.png" alt="Mitsubishi Electric" loading="lazy" onerror="this.style.display='none'"></span>
-        <h3>Mitsubishi Starmex</h3>
-        <p>Premium build with strong, even cooling and a long, reliable service life.</p>
-        <a href="https://wa.me/60123456789" class="u-link">Get a quote <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
+    <?php endforeach; ?>
   </div></div>
 </section>
+
 
 <!-- CURRENT OFFERS -->
 <section class="section offers" id="offers">
