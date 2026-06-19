@@ -450,6 +450,11 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
 .sd-aside .sd-card+.sd-card{margin-top:16px}
 .sd-card form.bd{display:grid;gap:12px}
 .sd-card form.bd .btn{width:100%;justify-content:center;margin-top:2px}
+.sd-body ul{list-style:none;display:grid;gap:10px;margin:6px 0 18px}
+.sd-body ul li{position:relative;padding-left:28px;font-size:16px;color:var(--ink)}
+.sd-body ul li::before{content:"";position:absolute;left:0;top:7px;width:17px;height:17px;border-radius:5px;background:var(--ice) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230E3988' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/11px no-repeat;border:1px solid var(--line)}
+.sv-keywords{display:flex;flex-wrap:wrap;gap:9px;margin-top:6px}
+.sv-keywords span{display:inline-block;background:var(--ice);border:1px solid var(--line);color:var(--navy-deep);font-size:13px;font-weight:500;padding:7px 14px;border-radius:999px}
 @media(max-width:780px){.sv-benefits{grid-template-columns:1fr}}
 
 /* service detail two-column */

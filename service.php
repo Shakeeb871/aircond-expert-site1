@@ -8,6 +8,7 @@ if (!isset($services[$slug])) {
     exit;
 }
 $s = $services[$slug];
+$page_keywords = !empty($s['keywords']) ? implode(', ', $s['keywords']) : '';
 $site_url = 'https://www.aircondexpert.my';
 $wa = 'https://wa.me/60123456789';
 
@@ -48,10 +49,15 @@ $benefit_icons = [
           <img src="/assets/img/<?= $slug ?>.jpg" alt="<?= htmlspecialchars($s['title']) ?>" loading="lazy" onerror="this.style.display='none'">
         </div>
 
-        <h2>Overview</h2>
+        <h2>Professional <?= htmlspecialchars($s['title']) ?> in the Klang Valley</h2>
         <?php foreach ($s['intro'] as $para): ?>
           <p><?= htmlspecialchars($para) ?></p>
         <?php endforeach; ?>
+
+        <?php if (!empty($s['sections'])): foreach ($s['sections'] as $sec): ?>
+        <h2><?= htmlspecialchars($sec[0]) ?></h2>
+        <?= $sec[1] ?>
+        <?php endforeach; endif; ?>
 
         <?php if (!empty($s['benefits'])): ?>
         <h2>Why It Matters</h2>
@@ -94,6 +100,13 @@ $benefit_icons = [
           <?php foreach ($s['faqs'] as $i => $f): ?>
           <details class="faq"<?= $i === 0 ? ' open' : '' ?>><summary><?= htmlspecialchars($f[0]) ?> <span class="pl">+</span></summary><div class="ans"><?= htmlspecialchars($f[1]) ?></div></details>
           <?php endforeach; ?>
+        </div>
+        <?php endif; ?>
+
+        <?php if (!empty($s['keywords'])): ?>
+        <h2>Popular Searches</h2>
+        <div class="sv-keywords">
+          <?php foreach ($s['keywords'] as $kw): ?><span><?= htmlspecialchars($kw) ?></span><?php endforeach; ?>
         </div>
         <?php endif; ?>
       </div>

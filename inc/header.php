@@ -19,7 +19,8 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?= htmlspecialchars($page_title) ?> | <?= $site_name ?></title>
 <meta name="description" content="<?= htmlspecialchars($page_desc) ?>">
-<?php if ($canonical): ?><link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
+<?php if (!empty($page_keywords)): ?><meta name="keywords" content="<?= htmlspecialchars($page_keywords) ?>">
+<?php endif; ?><?php if ($canonical): ?><link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
 <?php endif; ?>
 <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
 <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
