@@ -17,18 +17,23 @@ include __DIR__.'/inc/header.php';
         <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg> 4.9 on Google</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 24/7 callouts</span>
       </div>
-      <h1>Live better. Work better. <span class="y">Sleep cooler.</span></h1>
-      <p class="s">24-hour aircond service, repair, chemical wash, gas top-up and installation across the Klang Valley. Fixed pricing you agree first, and a real reply on WhatsApp within 15 minutes.</p>
+      <h1>Live Better. Work Better.<br><span class="y">Sleep Deeper.</span></h1>
+      <p class="s">Stay cool all year with the Klang Valley's trusted aircond experts. Service, repair, chemical wash and installation &mdash; fixed pricing, and a real WhatsApp reply in 15 minutes.</p>
       <div class="hero-cta">
         <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
         <a href="tel:+60123456789" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 12-345 6789</span></a>
       </div>
+      <div class="hero-stats">
+        <div><b>6,000+</b><span>units serviced</span></div>
+        <div><b>10+</b><span>years experience</span></div>
+        <div><b>15 min</b><span>WhatsApp reply</span></div>
+      </div>
     </div>
     <div class="bookcard reveal" id="book">
       <div class="bc-top">
-        <span class="pulse"><i></i> 15-min reply</span>
-        <h3>Schedule your <em>FREE</em> estimate today</h3>
-        <p>Tell us what you need. A real person replies on WhatsApp, fast.</p>
+        <span class="hf-tag">Free &middot; No obligation</span>
+        <h3>Schedule Your <em>FREE</em> Estimate Today</h3>
+        <p>Tell us what you need &mdash; a real technician replies on WhatsApp, fast.</p>
       </div>
       <div class="bc-body">
         <div class="bc-field">
@@ -56,7 +61,7 @@ include __DIR__.'/inc/header.php';
           <label for="bf-msg">What is happening?</label>
           <textarea id="bf-msg" rows="2" placeholder="e.g. Not cooling, water dripping, 2 units"></textarea>
         </div>
-        <button type="button" class="btn btn-wa bc-submit" id="bookBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></button>
+        <button type="button" class="btn btn-wa bc-submit" id="bookBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Get My Free Estimate</span></button>
         <p class="bc-note">No spam. We only use this to reply to your request.</p>
       </div>
     </div>
