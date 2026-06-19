@@ -48,6 +48,8 @@ include __DIR__.'/inc/header.php';
 </section>
 
 
+<?php include __DIR__.'/inc/brands.php'; ?>
+
 <!-- CORE SERVICES (bento) -->
 <section class="section services2" id="core">
   <div class="wrap center">
@@ -100,7 +102,40 @@ include __DIR__.'/inc/header.php';
 
 
 
-<?php include __DIR__.'/inc/brands.php'; ?>
+<!-- WHAT'S INCLUDED -->
+<?php
+$svc = require __DIR__.'/data/services.php';
+$inclIcons = [
+  'aircond-service' => '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/>',
+  'aircond-repair'  => '<path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/>',
+  'installation'    => '<rect x="2" y="5" width="20" height="11" rx="2"/><path d="M6 12h12M9 20h6"/>',
+  'chemical-wash'   => '<path d="M3 21l8-8M14 4l6 6-9 9H5v-6z"/>',
+];
+?>
+<section class="section included-sec" id="included">
+  <div class="wrap center">
+    <span class="eyebrow">What We Include</span>
+    <h2 style="margin-top:12px">What&rsquo;s Included in Our Services</h2>
+    <p class="sub">Exactly what you get on every visit &mdash; clear and upfront, handled by our own licensed, in-house technicians.</p>
+  </div>
+  <div class="wrap"><div class="incl-grid reveal">
+    <?php foreach(['aircond-service','aircond-repair','installation','chemical-wash'] as $slug): $s = $svc[$slug]; ?>
+    <div class="incl-card">
+      <div class="incl-head">
+        <span class="incl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><?= $inclIcons[$slug] ?></svg></span>
+        <div><h3><?= htmlspecialchars($s['title']) ?></h3><p><?= htmlspecialchars($s['tagline']) ?></p></div>
+      </div>
+      <ul class="incl-list">
+        <?php foreach($s['included'] as $item): ?>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> <?= htmlspecialchars($item) ?></li>
+        <?php endforeach; ?>
+      </ul>
+      <a href="/services/<?= $slug ?>/" class="incl-link">View full details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <?php endforeach; ?>
+  </div></div>
+</section>
+
 
 <!-- COMFORT IN 3 STEPS -->
 <section class="section comfort" id="comfort">
@@ -120,6 +155,37 @@ include __DIR__.'/inc/header.php';
     </div>
     <div class="comfort-right reveal">
       <div class="cr-frame imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Add a van or team photo</span></span><img src="/assets/img/about-team.jpg" alt="Our aircond team" loading="lazy" onerror="this.style.display='none'"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED EXPERTS (about) -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual reveal">
+      <div class="av-frame imgph">
+        <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/></svg><span>Add a technician-at-work photo</span></span>
+        <img src="/assets/img/work-6.jpg" alt="Licensed technician servicing an air conditioning unit" loading="lazy" onerror="this.style.display='none'">
+      </div>
+      <div class="av-badge"><b>10+</b><span>years<br>of service</span></div>
+      <div class="av-badge2"><div class="st"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></div><span>4.9 on Google</span></div>
+    </div>
+    <div class="about-content reveal">
+      <span class="eyebrow">Your Trusted Experts</span>
+      <h2>Your trusted air conditioning experts</h2>
+      <p>We are a team of licensed, in-house aircond technicians serving Kuala Lumpur and Selangor. No subcontractors, no guesswork, no surprise invoices. Just clean, careful work and a unit that cools the way it should.</p>
+      <ul class="about-points">
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Licensed, in-house technicians on every single job</li>
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> A clear quote agreed before any work begins</li>
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Every major aircond brand serviced and repaired</li>
+        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> One-year workmanship warranty in writing</li>
+      </ul>
+      <div class="about-stats">
+        <div><b>6,000+</b><span>Units serviced</span></div>
+        <div><b>15 min</b><span>Avg WhatsApp reply</span></div>
+        <div><b>9</b><span>Areas covered</span></div>
+      </div>
+      <a href="https://wa.me/60123456789" class="btn btn-navy"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Talk to us on WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -172,35 +238,27 @@ include __DIR__.'/inc/header.php';
   </div>
 </section>
 
-<!-- TRUSTED EXPERTS (about) -->
-<section class="section about" id="about">
-  <div class="wrap about-grid">
-    <div class="about-visual reveal">
-      <div class="av-frame imgph">
-        <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/></svg><span>Add a technician-at-work photo</span></span>
-        <img src="/assets/img/work-6.jpg" alt="Licensed technician servicing an air conditioning unit" loading="lazy" onerror="this.style.display='none'">
-      </div>
-      <div class="av-badge"><b>10+</b><span>years<br>of service</span></div>
-      <div class="av-badge2"><div class="st"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></div><span>4.9 on Google</span></div>
-    </div>
-    <div class="about-content reveal">
-      <span class="eyebrow">Your Trusted Experts</span>
-      <h2>Your trusted air conditioning experts</h2>
-      <p>We are a team of licensed, in-house aircond technicians serving Kuala Lumpur and Selangor. No subcontractors, no guesswork, no surprise invoices. Just clean, careful work and a unit that cools the way it should.</p>
-      <ul class="about-points">
-        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Licensed, in-house technicians on every single job</li>
-        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> A clear quote agreed before any work begins</li>
-        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Every major aircond brand serviced and repaired</li>
-        <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> One-year workmanship warranty in writing</li>
-      </ul>
-      <div class="about-stats">
-        <div><b>6,000+</b><span>Units serviced</span></div>
-        <div><b>15 min</b><span>Avg WhatsApp reply</span></div>
-        <div><b>9</b><span>Areas covered</span></div>
-      </div>
-      <a href="https://wa.me/60123456789" class="btn btn-navy"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Talk to us on WhatsApp</span></a>
-    </div>
+<!-- CURRENT OFFERS -->
+<section class="section offers" id="offers">
+  <div class="wrap center">
+    <span class="eyebrow">Save This Season</span>
+    <h2 style="margin-top:12px">Current offers</h2>
+    <p class="sub">Limited-time deals on the services our customers book most. WhatsApp us to claim yours.</p>
   </div>
+  <div class="wrap"><div class="offers-grid reveal">
+    <a href="https://wa.me/60123456789" class="offer">
+      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/installation.jpg" alt="Installation offer" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="of-cap"><span class="of-tag">Installation</span><h3>Special discount on new aircond installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a href="https://wa.me/60123456789" class="offer">
+      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Maintenance offer" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="of-cap"><span class="of-tag">Maintenance</span><h3>Free 1st-year service with installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a href="https://wa.me/60123456789" class="offer">
+      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical wash offer" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="of-cap"><span class="of-tag">Chemical wash</span><h3>Cashback on multi-unit chemical wash</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+  </div></div>
 </section>
 
 <!-- REVIEWS -->
@@ -252,64 +310,6 @@ include __DIR__.'/inc/header.php';
       <button class="rev-nav" id="revNext" aria-label="Next reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
     </div>
   </div>
-</section>
-
-<!-- WHAT'S INCLUDED -->
-<?php
-$svc = require __DIR__.'/data/services.php';
-$inclIcons = [
-  'aircond-service' => '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/>',
-  'aircond-repair'  => '<path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/>',
-  'installation'    => '<rect x="2" y="5" width="20" height="11" rx="2"/><path d="M6 12h12M9 20h6"/>',
-  'chemical-wash'   => '<path d="M3 21l8-8M14 4l6 6-9 9H5v-6z"/>',
-];
-?>
-<section class="section included-sec" id="included">
-  <div class="wrap center">
-    <span class="eyebrow">What We Include</span>
-    <h2 style="margin-top:12px">What&rsquo;s Included in Our Services</h2>
-    <p class="sub">Exactly what you get on every visit &mdash; clear and upfront, handled by our own licensed, in-house technicians.</p>
-  </div>
-  <div class="wrap"><div class="incl-grid reveal">
-    <?php foreach(['aircond-service','aircond-repair','installation','chemical-wash'] as $slug): $s = $svc[$slug]; ?>
-    <div class="incl-card">
-      <div class="incl-head">
-        <span class="incl-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><?= $inclIcons[$slug] ?></svg></span>
-        <div><h3><?= htmlspecialchars($s['title']) ?></h3><p><?= htmlspecialchars($s['tagline']) ?></p></div>
-      </div>
-      <ul class="incl-list">
-        <?php foreach($s['included'] as $item): ?>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> <?= htmlspecialchars($item) ?></li>
-        <?php endforeach; ?>
-      </ul>
-      <a href="/services/<?= $slug ?>/" class="incl-link">View full details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-    <?php endforeach; ?>
-  </div></div>
-</section>
-
-
-<!-- CURRENT OFFERS -->
-<section class="section offers" id="offers">
-  <div class="wrap center">
-    <span class="eyebrow">Save This Season</span>
-    <h2 style="margin-top:12px">Current offers</h2>
-    <p class="sub">Limited-time deals on the services our customers book most. WhatsApp us to claim yours.</p>
-  </div>
-  <div class="wrap"><div class="offers-grid reveal">
-    <a href="https://wa.me/60123456789" class="offer">
-      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/installation.jpg" alt="Installation offer" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="of-cap"><span class="of-tag">Installation</span><h3>Special discount on new aircond installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="https://wa.me/60123456789" class="offer">
-      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Maintenance offer" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="of-cap"><span class="of-tag">Maintenance</span><h3>Free 1st-year service with installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="https://wa.me/60123456789" class="offer">
-      <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical wash offer" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="of-cap"><span class="of-tag">Chemical wash</span><h3>Cashback on multi-unit chemical wash</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-  </div></div>
 </section>
 
 <!-- INSIGHTS / BLOG -->
