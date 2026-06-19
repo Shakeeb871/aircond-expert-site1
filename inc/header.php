@@ -9,6 +9,7 @@ if (!isset($page_desc))  $page_desc  = 'Licensed 24-hour aircond service, repair
 if (!isset($active))     $active     = '';
 if (!isset($canonical))  $canonical  = '';
 $cssv = @filemtime(__DIR__ . '/../assets/css/style.css') ?: '1';
+$logov = @filemtime(__DIR__ . '/../assets/img/logo.png') ?: '1';
 function nav_active($k){ global $active; return $active === $k ? ' active' : ''; }
 ?>
 <!DOCTYPE html>
@@ -24,7 +25,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
 <meta property="og:type" content="website">
 <meta property="og:image" content="<?= $site_url ?>/assets/img/logo.png">
-<link rel="icon" href="/assets/img/logo.png" sizes="any">
+<link rel="icon" href="/assets/img/logo.png?v=<?= $logov ?>" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <header class="hd" id="hd">
   <div class="wrap nav">
     <a href="/" class="brand">
-      <img src="/assets/img/logo.png" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
+      <img src="/assets/img/logo.png?v=<?= $logov ?>" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
     </a>
     <nav class="menu" id="menu">
       <div class="menu-head"><span class="menu-title">Menu</span><button class="menu-close" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>

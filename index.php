@@ -21,15 +21,10 @@ include __DIR__.'/inc/header.php';
       <h1>Fast Reliable AC Repair<br>at Doorstep</h1>
       <p>Keep your home cool and comfortable with expert AC repair, maintenance, and installation services &mdash; available 24/7 at your convenience.</p>
       <div class="hero2-actions">
-        <a href="https://wa.me/60123456789" class="btn btn-orange"><span class="btn-txt">Book Appointment</span></a>
-        <div class="happy">
-          <span class="happy-lbl">Happy Clients</span>
-          <div class="avs">
-            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
-            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
-            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
-            <span class="av av-num">10K+</span>
-          </div>
+        <a href="https://wa.me/60123456789" class="btn btn-y hero2-cta"><span class="btn-txt">Book Appointment</span></a>
+        <div class="hero2-rating">
+          <span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg></span>
+          <span class="rate-txt"><b>4.9/5</b> &middot; Rated by 600+ customers</span>
         </div>
       </div>
     </div>
