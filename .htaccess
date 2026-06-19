@@ -24,6 +24,8 @@ RewriteRule ^(.*)$ /$1/ [L,R=301]
 # --- routes ---
 RewriteRule ^services/?$ services.php [L]
 RewriteRule ^services/([a-z0-9-]+)/?$ service.php?s=$1 [L,QSA]
+RewriteRule ^blog/?$ blog.php [L]
+RewriteRule ^blog/([a-z0-9-]+)/?$ post.php?slug=$1 [L,QSA]
 RewriteRule ^(about|contact|coverage|amc|privacy|terms|pdpa|cookie)/?$ $1.php [L]
 
 # --- caching for static assets ---

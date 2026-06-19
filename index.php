@@ -314,26 +314,32 @@ include __DIR__.'/inc/header.php';
 </section>
 
 <!-- INSIGHTS / BLOG -->
+<?php $posts = require __DIR__.'/data/posts.php'; $latest = array_slice($posts, 0, 3, true); ?>
 <section class="section insights" id="insights">
   <div class="wrap center">
     <span class="eyebrow">From The Blog</span>
-    <h2 style="margin-top:12px">Latest insights &amp; cooling tips</h2>
+    <h2 style="margin-top:12px">Latest Insights &amp; Cooling Tips</h2>
     <p class="sub">Practical advice from our technicians to help you keep your aircond running cool and efficient.</p>
   </div>
   <div class="wrap"><div class="blog-grid reveal">
-    <a href="/services/aircond-service/" class="bpost">
-      <div class="bp-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Article photo</span></span><img src="/assets/img/work-2.jpg" alt="Choosing the right aircond" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="bp-body"><span class="bp-cat">Buying guide</span><h3>How to choose the right aircond for your home</h3><span class="bp-more">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    <?php foreach ($latest as $slug => $p): ?>
+    <a href="/blog/<?= $slug ?>/" class="bpost">
+      <div class="bp-img imgph">
+        <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Article photo</span></span>
+        <img src="/assets/img/<?= $p['img'] ?>.jpg" alt="<?= htmlspecialchars($p['title']) ?>" loading="lazy" onerror="this.style.display='none'">
+        <span class="bp-cat"><?= htmlspecialchars($p['category']) ?></span>
+      </div>
+      <div class="bp-body">
+        <span class="bp-meta"><?= date('M j, Y', strtotime($p['date'])) ?> &middot; <?= (int)$p['read'] ?> min read</span>
+        <h3><?= htmlspecialchars($p['title']) ?></h3>
+        <p class="bp-excerpt"><?= htmlspecialchars($p['excerpt']) ?></p>
+        <span class="bp-more">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
     </a>
-    <a href="/services/chemical-wash/" class="bpost">
-      <div class="bp-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Article photo</span></span><img src="/assets/img/work-3.jpg" alt="Professional maintenance" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="bp-body"><span class="bp-cat">Maintenance</span><h3>What to expect during a professional service</h3><span class="bp-more">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/amc/" class="bpost">
-      <div class="bp-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Article photo</span></span><img src="/assets/img/work-4.jpg" alt="Maintenance tips" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="bp-body"><span class="bp-cat">Tips</span><h3>5 essential aircond maintenance tips for homeowners</h3><span class="bp-more">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-  </div></div>
+    <?php endforeach; ?>
+  </div>
+  <div class="blog-more"><a href="/blog/" class="btn btn-navy"><span class="btn-txt">View All Articles</span></a></div>
+  </div>
 </section>
 
 <!-- GET IN TOUCH (FAQ) -->

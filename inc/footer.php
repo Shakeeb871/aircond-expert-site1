@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="fcol"><h4>Services</h4><a href="/services/aircond-service/">Aircond Service</a><a href="/services/chemical-wash/">Chemical Wash</a><a href="/services/aircond-repair/">Aircond Repair</a><a href="/services/installation/">Installation</a><a href="/services/gas-top-up/">Gas Top-Up</a><a href="/amc/">Annual Maintenance</a></div>
-      <div class="fcol"><h4>Company</h4><a href="/about/">About us</a><a href="/#why">Why us</a><a href="/coverage/">Coverage</a><a href="/#reviews">Reviews</a><a href="/#faq">FAQ</a><a href="/contact/">Contact</a></div>
+      <div class="fcol"><h4>Company</h4><a href="/about/">About us</a><a href="/#why">Why us</a><a href="/coverage/">Coverage</a><a href="/blog/">Blog</a><a href="/#reviews">Reviews</a><a href="/contact/">Contact</a></div>
       <div class="fcol"><h4>Legal</h4><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a><a href="/pdpa/">PDPA Notice</a><a href="/cookie/">Cookie Policy</a></div>
     </div>
     <div class="fbot">
