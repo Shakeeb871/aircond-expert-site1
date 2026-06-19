@@ -146,4 +146,6 @@ $benefit_icons = [
 </section>
 
 <?php include __DIR__ . '/inc/testimonials.php'; ?>
+<?php include __DIR__ . '/inc/footer.php'; ?>
+
 

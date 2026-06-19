@@ -17,3 +17,5 @@ include __DIR__.'/inc/header.php';
   </div>
 </div></section>
 <?php include __DIR__ . '/inc/testimonials.php'; ?>
+<?php include __DIR__ . '/inc/footer.php'; ?>
+
