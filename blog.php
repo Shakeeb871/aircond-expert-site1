@@ -1,7 +1,7 @@
 <?php
 $posts = require __DIR__ . '/data/posts.php';
 $page_title = 'Aircond Tips & Guides';
-$page_desc  = 'Practical air conditioning advice from our technicians: buying guides, maintenance tips and troubleshooting for Klang Valley homes.';
+$page_desc  = 'Practical air conditioning advice from our technicians: buying guides, maintenance tips and troubleshooting for Kuala Lumpur and Selangor homes.';
 $active = 'blog';
 $canonical = 'https://www.aircondexpert.my/blog/';
 include __DIR__ . '/inc/header.php';

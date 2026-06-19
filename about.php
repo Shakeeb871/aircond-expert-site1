@@ -1,7 +1,7 @@
 <?php
 $page_title='About Aiqon Quick Cool';
-$page_desc='Licensed, in-house aircond technicians serving the Klang Valley. Honest pricing, all major brands, and a one-year workmanship warranty.';
-$page_keywords='about aircond company Klang Valley, licensed aircond technicians, aircond experts Malaysia, trusted aircond service KL';
+$page_desc='Licensed, in-house aircond technicians serving Kuala Lumpur and Selangor. Honest pricing, all major brands, and a one-year workmanship warranty.';
+$page_keywords='about aircond company Kuala Lumpur and Selangor, licensed aircond technicians, aircond experts Malaysia, trusted aircond service KL';
 $active='about'; $canonical='https://www.aircondexpert.my/about/';
 $wa='https://wa.me/60123456789';
 include __DIR__.'/inc/header.php';
@@ -10,7 +10,7 @@ include __DIR__.'/inc/header.php';
   <div class="crumb"><a href="/">Home</a> <span>/</span> About</div>
   <span class="eyebrow on-dark">About Us</span>
   <h1 style="margin-top:10px">Cooling Malaysian Homes, The Honest Way</h1>
-  <p>A team of licensed, in-house technicians keeping homes and offices across the Klang Valley cool &mdash; with honest pricing and workmanship that lasts.</p>
+  <p>A team of licensed, in-house technicians keeping homes and offices across Kuala Lumpur and Selangor cool &mdash; with honest pricing and workmanship that lasts.</p>
 </div></section>
 
 <!-- STORY -->
@@ -32,7 +32,7 @@ include __DIR__.'/inc/header.php';
     <span class="eyebrow">Who We Are</span>
     <h2>Trusted Aircond Experts, From The First Message</h2>
     <p>We started Aiqon Quick Cool with one simple idea: aircond work should be done properly, priced fairly, and explained clearly. No subcontractors, no inflated call-outs, and no guesswork &mdash; every technician on a job is part of our own trained, in-house team.</p>
-    <p>Over a decade later, that promise still guides every visit, whether it is a quick service, a deep chemical wash, or a full installation across the Klang Valley.</p>
+    <p>Over a decade later, that promise still guides every visit, whether it is a quick service, a deep chemical wash, or a full installation across Kuala Lumpur and Selangor.</p>
     <ul class="about-points">
       <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Licensed, in-house technicians on every single job</li>
       <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> A clear quote agreed before any work begins</li>
@@ -41,7 +41,7 @@ include __DIR__.'/inc/header.php';
     </ul>
     <div class="ab-sign">
       <div class="ab-sign-name">Aiqon Quick Cool</div>
-      <div class="ab-sign-role">Licensed Aircond Specialists &middot; Klang Valley, Malaysia</div>
+      <div class="ab-sign-role">Licensed Aircond Specialists &middot; Kuala Lumpur and Selangor, Malaysia</div>
     </div>
     <div class="ab-cta">
       <a href="<?= $wa ?>" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>

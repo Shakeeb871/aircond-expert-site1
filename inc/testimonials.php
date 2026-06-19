@@ -13,7 +13,7 @@ $testimonials = [
   <div class="wrap center">
     <span class="eyebrow">Testimonials</span>
     <h2 style="margin-top:12px">What Our Customers Say</h2>
-    <p class="sub">Real stories from homes and businesses we have helped stay cool across the Klang Valley.</p>
+    <p class="sub">Real stories from homes and businesses we have helped stay cool across Kuala Lumpur and Selangor.</p>
   </div>
   <div class="wrap">
     <div class="tslider">

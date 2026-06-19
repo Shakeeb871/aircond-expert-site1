@@ -4,11 +4,11 @@ return [
   'aircond-service' => [
     'title' => 'Aircond Service',
     'tagline' => 'Filter, coil and drainage care that brings the cold back.',
-    'desc' => 'Professional aircond service across the Klang Valley. Cleaning, gas and drainage checks for stronger cooling and lower bills.',
-    'keywords' => ['aircond service Klang Valley','aircond servicing KL','aircond cleaning','split unit service','aircond maintenance Malaysia','aircond service near me','Daikin aircond service','Panasonic aircond service','Mitsubishi aircond service'],
+    'desc' => 'Professional aircond service across Kuala Lumpur and Selangor. Cleaning, gas and drainage checks for stronger cooling and lower bills.',
+    'keywords' => ['aircond service Kuala Lumpur and Selangor','aircond servicing KL','aircond cleaning','split unit service','aircond maintenance Malaysia','aircond service near me','Daikin aircond service','Panasonic aircond service','Mitsubishi aircond service'],
     'intro' => [
       'A routine aircond service keeps your unit cooling at full strength and stops small problems turning into expensive repairs. Our licensed technicians clean the filters, blower and coil, clear the drainage line, and check the gas pressure so air flows strong and your room cools quickly.',
-      'Most homes in the Klang Valley need an aircond service every three to four months, more often if you run the unit daily or live near dust and traffic. We service all major brands including Daikin, Panasonic, Mitsubishi, York, Acson, Hitachi and Midea, and always agree the price before we start.'
+      'Most homes in Kuala Lumpur and Selangor need an aircond service every three to four months, more often if you run the unit daily or live near dust and traffic. We service all major brands including Daikin, Panasonic, Mitsubishi, York, Acson, Hitachi and Midea, and always agree the price before we start.'
     ],
     'benefits' => [
       ['Cools faster', 'Clean coils and filters restore airflow so rooms reach temperature quickly.'],
@@ -25,7 +25,7 @@ return [
     'sections' => [
       ['Signs Your Aircond Needs a Service', '<p>Booking a service early protects your unit and your bill. Watch for these common signs:</p><ul><li>Weak or slow cooling even on a low temperature</li><li>Water dripping from the indoor unit</li><li>A musty or sour smell when the aircond runs</li><li>Higher than usual electricity bills</li><li>Ice forming on the coil or pipes</li></ul>'],
       ['How Often Should You Service Your Aircond?', '<p>In Malaysia&rsquo;s hot, humid climate, a home aircond used daily should be serviced every three to four months. Units in dusty areas, near busy roads, or running long hours benefit from more frequent attention. A quick monthly filter rinse between services keeps airflow strong and dust down.</p>'],
-      ['Aircond Service for Every Brand', '<p>Our technicians service every major brand &mdash; Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea &mdash; for wall split, cassette and inverter systems. Wherever you are in the Klang Valley, from Kuala Lumpur and Petaling Jaya to Subang, Cheras and Klang, a local technician is close by.</p>'],
+      ['Aircond Service for Every Brand', '<p>Our technicians service every major brand &mdash; Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea &mdash; for wall split, cassette and inverter systems. Wherever you are in Kuala Lumpur and Selangor, from Kuala Lumpur and Petaling Jaya to Subang, Cheras and Klang, a local technician is close by.</p>'],
     ],
     'process' => [
       ['Tell us about your unit', 'Send a photo and your area on WhatsApp; we confirm a price and a slot.'],
@@ -43,11 +43,11 @@ return [
   'chemical-wash' => [
     'title' => 'Chemical Wash',
     'tagline' => 'A deep clean that revives weak, smelly aircond units.',
-    'desc' => 'Aircond chemical wash service in the Klang Valley. A full coil and blower deep clean for units that cool poorly or smell musty.',
-    'keywords' => ['aircond chemical wash','chemical wash Klang Valley','aircond deep cleaning','aircond mould removal','split unit chemical wash','aircond overhaul','chemical wash KL','aircond smell removal'],
+    'desc' => 'Aircond chemical wash service in Kuala Lumpur and Selangor. A full coil and blower deep clean for units that cool poorly or smell musty.',
+    'keywords' => ['aircond chemical wash','chemical wash Kuala Lumpur and Selangor','aircond deep cleaning','aircond mould removal','split unit chemical wash','aircond overhaul','chemical wash KL','aircond smell removal'],
     'intro' => [
       'When a normal service is not enough, an aircond chemical wash strips out the built-up dirt, mould and bacteria deep inside the coil and blower wheel. This is the fix for units that cool weakly, drip water, or push out a musty smell.',
-      'The job takes around 90 to 120 minutes per unit. We dismantle the relevant parts, treat them with proper coil chemicals, flush everything clean, then reassemble and test the cooling before we leave. We chemical wash all major brands across the Klang Valley.'
+      'The job takes around 90 to 120 minutes per unit. We dismantle the relevant parts, treat them with proper coil chemicals, flush everything clean, then reassemble and test the cooling before we leave. We chemical wash all major brands across Kuala Lumpur and Selangor.'
     ],
     'benefits' => [
       ['Removes odour', 'Anti-bacterial treatment clears mould and musty smells at the source.'],
@@ -82,11 +82,11 @@ return [
   'aircond-repair' => [
     'title' => 'Aircond Repair',
     'tagline' => 'Faults diagnosed and fixed the same visit.',
-    'desc' => 'Aircond repair across the Klang Valley. Capacitor, PCB, fan motor, compressor and gas faults diagnosed and fixed fast.',
-    'keywords' => ['aircond repair Klang Valley','aircond not cooling','aircond repair KL','aircond water leaking','aircond compressor repair','aircond PCB repair','aircond capacitor replacement','emergency aircond repair'],
+    'desc' => 'Aircond repair across Kuala Lumpur and Selangor. Capacitor, PCB, fan motor, compressor and gas faults diagnosed and fixed fast.',
+    'keywords' => ['aircond repair Kuala Lumpur and Selangor','aircond not cooling','aircond repair KL','aircond water leaking','aircond compressor repair','aircond PCB repair','aircond capacitor replacement','emergency aircond repair'],
     'intro' => [
       'If your aircond is not cooling, tripping the breaker, leaking water or making noise, our technicians find the real cause before quoting. We carry common parts so most aircond repairs are completed on the same visit.',
-      'We show you the faulty part before we replace it and agree the price first. No guesswork, and no pressure to replace a whole unit when a single component is the problem. We repair all major brands across the Klang Valley.'
+      'We show you the faulty part before we replace it and agree the price first. No guesswork, and no pressure to replace a whole unit when a single component is the problem. We repair all major brands across Kuala Lumpur and Selangor.'
     ],
     'benefits' => [
       ['Same-visit fixes', 'We carry common parts so most faults are repaired on the first visit.'],
@@ -103,7 +103,7 @@ return [
     'sections' => [
       ['Common Aircond Problems We Repair', '<p>Our technicians diagnose and fix the full range of aircond faults, including:</p><ul><li>Aircond not cooling or blowing warm air</li><li>Unit tripping the breaker or not powering on</li><li>Water leaking or dripping indoors</li><li>Loud, rattling or grinding noises</li><li>Bad smells or ice forming on the coil</li><li>Faulty remote, sensor or PCB</li></ul>'],
       ['Why Is My Aircond Not Cooling?', '<p>The most common causes are low refrigerant from a leak, a dirty or clogged coil, or a failed capacitor or compressor. Refilling gas without sealing a leak only wastes money, so we always diagnose the true cause first and explain it before recommending a fix.</p>'],
-      ['Aircond Repair for All Brands', '<p>We repair Daikin, Panasonic, Mitsubishi, York, Acson, Hitachi, Hisense, Haier and Midea units across Kuala Lumpur, Petaling Jaya, Subang, Cheras, Shah Alam, Klang and the wider Klang Valley, with same-day slots where available.</p>'],
+      ['Aircond Repair for All Brands', '<p>We repair Daikin, Panasonic, Mitsubishi, York, Acson, Hitachi, Hisense, Haier and Midea units across Kuala Lumpur, Petaling Jaya, Subang, Cheras, Shah Alam, Klang and the wider Kuala Lumpur and Selangor, with same-day slots where available.</p>'],
     ],
     'process' => [
       ['Describe the fault', 'Tell us the symptoms on WhatsApp; we give an arrival window.'],
@@ -121,11 +121,11 @@ return [
   'installation' => [
     'title' => 'Aircond Installation',
     'tagline' => 'Wall split supply and fit, tested and guaranteed.',
-    'desc' => 'Aircond installation in the Klang Valley. Wall split supply and fit with OEM brackets, copper pipe and a one-year workmanship warranty.',
-    'keywords' => ['aircond installation Klang Valley','aircond installation KL','split unit installation','new aircond install','aircond supply and install','aircond fit only','copper piping installation','aircond mounting'],
+    'desc' => 'Aircond installation in Kuala Lumpur and Selangor. Wall split supply and fit with OEM brackets, copper pipe and a one-year workmanship warranty.',
+    'keywords' => ['aircond installation Kuala Lumpur and Selangor','aircond installation KL','split unit installation','new aircond install','aircond supply and install','aircond fit only','copper piping installation','aircond mounting'],
     'intro' => [
       'A good installation decides how well your aircond performs for years. We mount the unit level, run proper copper pipe, fit OEM brackets, vacuum the line, and test the cooling fully before handover.',
-      'We can supply the unit or install one you already bought. Every aircond installation across the Klang Valley carries a one-year workmanship warranty in writing.'
+      'We can supply the unit or install one you already bought. Every aircond installation across Kuala Lumpur and Selangor carries a one-year workmanship warranty in writing.'
     ],
     'benefits' => [
       ['Done right first time', 'Level mounting and proper piping mean strong, quiet cooling for years.'],
@@ -142,7 +142,7 @@ return [
     'sections' => [
       ['Aircond Installation Done the Right Way', '<p>A poor installation causes weak cooling, leaks and noise for years. We do it properly: a level wall mount on OEM brackets, correctly sized and insulated copper piping, a vacuumed line, the right gas charge, and a full cooling and pressure test before we hand over.</p>'],
       ['Choosing the Right Aircond Size', '<p>The right capacity keeps a room cool without wasting power. As a rough guide, a small bedroom suits a 1.0 to 1.5 HP unit, while a large living room may need 2.0 HP or more. Tell us your room size and we will recommend the correct unit before installing.</p>'],
-      ['Supply &amp; Install or Fit-Only', '<p>Already bought a unit? We offer fit-only installation. Need the unit too? We can supply genuine units from trusted brands and install them in one visit, anywhere in the Klang Valley.</p>'],
+      ['Supply &amp; Install or Fit-Only', '<p>Already bought a unit? We offer fit-only installation. Need the unit too? We can supply genuine units from trusted brands and install them in one visit, anywhere in Kuala Lumpur and Selangor.</p>'],
     ],
     'process' => [
       ['Site assessment', 'We advise the best position and the right unit size for the room.'],
@@ -160,11 +160,11 @@ return [
   'gas-top-up' => [
     'title' => 'Gas Top-Up',
     'tagline' => 'Leak checked first, then the correct refrigerant.',
-    'desc' => 'Aircond gas top-up in the Klang Valley. Leak detection first, then the correct refrigerant (R32, R410A, R22) and a pressure test.',
-    'keywords' => ['aircond gas top up','aircond refrigerant refill','aircond gas Klang Valley','R32 gas top up','R410A refill','aircond not cold gas','aircond leak detection','aircond gas charging KL'],
+    'desc' => 'Aircond gas top-up in Kuala Lumpur and Selangor. Leak detection first, then the correct refrigerant (R32, R410A, R22) and a pressure test.',
+    'keywords' => ['aircond gas top up','aircond refrigerant refill','aircond gas Kuala Lumpur and Selangor','R32 gas top up','R410A refill','aircond not cold gas','aircond leak detection','aircond gas charging KL'],
     'intro' => [
       'If your unit runs but no longer cools, low refrigerant is often the cause. We check for leaks first, because simply refilling a leaking system wastes your money and the gas escapes again within weeks.',
-      'Once any leak is sealed, we charge the correct refrigerant for your unit &mdash; R32, R410A or R22 &mdash; and pressure test it so the cooling holds. We serve homes and businesses across the Klang Valley.'
+      'Once any leak is sealed, we charge the correct refrigerant for your unit &mdash; R32, R410A or R22 &mdash; and pressure test it so the cooling holds. We serve homes and businesses across Kuala Lumpur and Selangor.'
     ],
     'benefits' => [
       ['Leak checked first', 'We find and seal leaks so your gas does not escape again in weeks.'],
@@ -199,11 +199,11 @@ return [
   'general-cleaning' => [
     'title' => 'General Cleaning',
     'tagline' => 'A quick refresh that keeps airflow and air fresh.',
-    'desc' => 'Aircond general cleaning in the Klang Valley. Filter and cover wash that restores airflow and keeps room air fresh between full services.',
-    'keywords' => ['aircond general cleaning','aircond filter cleaning','aircond basic cleaning','aircond cleaning Klang Valley','aircond cleaning KL','aircond dust removal','aircond cover wash'],
+    'desc' => 'Aircond general cleaning in Kuala Lumpur and Selangor. Filter and cover wash that restores airflow and keeps room air fresh between full services.',
+    'keywords' => ['aircond general cleaning','aircond filter cleaning','aircond basic cleaning','aircond cleaning Kuala Lumpur and Selangor','aircond cleaning KL','aircond dust removal','aircond cover wash'],
     'intro' => [
       'A light general cleaning between full services keeps airflow strong and the air in your room fresh. It is the quick, affordable way to maintain cooling and reduce dust if you cannot do a full service yet.',
-      'We wash the filters and front cover, wipe the visible parts, and check that the unit is draining and cooling as it should. Available for homes and offices across the Klang Valley.'
+      'We wash the filters and front cover, wipe the visible parts, and check that the unit is draining and cooling as it should. Available for homes and offices across Kuala Lumpur and Selangor.'
     ],
     'benefits' => [
       ['Quick and affordable', 'A fast refresh that keeps cooling steady between full services.'],

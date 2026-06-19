@@ -1,6 +1,6 @@
 <?php
 $page_title='24-Hour Aircond Service, Repair & Installation';
-$page_desc='Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across the Klang Valley. All major brands, fixed pricing, 15-minute WhatsApp reply.';
+$page_desc='Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All major brands, fixed pricing, 15-minute WhatsApp reply.';
 $active='home';
 $canonical='https://www.aircondexpert.my/';
 include __DIR__.'/inc/header.php';
@@ -100,6 +100,8 @@ include __DIR__.'/inc/header.php';
 
 
 
+<?php include __DIR__.'/inc/brands.php'; ?>
+
 <!-- COMFORT IN 3 STEPS -->
 <section class="section comfort" id="comfort">
   <div class="wrap comfort-grid">
@@ -127,12 +129,12 @@ include __DIR__.'/inc/header.php';
   <div class="wrap center">
     <span class="eyebrow">Why Choose Us</span>
     <h2 style="margin-top:12px">Why choose our trusted professional cooling experts</h2>
-    <p class="sub">A decade of clean, careful work across the Klang Valley — and the numbers our customers trust us by.</p>
+    <p class="sub">A decade of clean, careful work across Kuala Lumpur and Selangor — and the numbers our customers trust us by.</p>
   </div>
   <div class="wrap"><div class="ws-grid reveal" id="stats">
     <div class="wsc t-lav">
       <span class="ws-num"><span data-c="1000">0</span><span class="y">+</span></span>
-      <span class="ws-lbl">Units serviced and installed across the Klang Valley</span>
+      <span class="ws-lbl">Units serviced and installed across Kuala Lumpur and Selangor</span>
     </div>
     <div class="wsc t-yel">
       <span class="ws-num"><span class="y">24/7</span></span>
@@ -184,7 +186,7 @@ include __DIR__.'/inc/header.php';
     <div class="about-content reveal">
       <span class="eyebrow">Your Trusted Experts</span>
       <h2>Your trusted air conditioning experts</h2>
-      <p>We are a team of licensed, in-house aircond technicians serving the Klang Valley. No subcontractors, no guesswork, no surprise invoices. Just clean, careful work and a unit that cools the way it should.</p>
+      <p>We are a team of licensed, in-house aircond technicians serving Kuala Lumpur and Selangor. No subcontractors, no guesswork, no surprise invoices. Just clean, careful work and a unit that cools the way it should.</p>
       <ul class="about-points">
         <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Licensed, in-house technicians on every single job</li>
         <li><span class="ck"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> A clear quote agreed before any work begins</li>
@@ -365,7 +367,7 @@ $inclIcons = [
 <section class="serving" id="areas">
   <div class="wrap center">
     <span class="eyebrow on-dark">Coverage</span>
-    <h2>Serving homes &amp; businesses across the Klang Valley</h2>
+    <h2>Serving homes &amp; businesses across Kuala Lumpur and Selangor</h2>
     <p class="serving-sub">Local technicians close to you. Not on the list? WhatsApp your postcode and we will quote.</p>
   </div>
   <div class="wrap"><div class="serving-grid">

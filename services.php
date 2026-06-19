@@ -1,7 +1,7 @@
 <?php
 $services = require __DIR__ . '/data/services.php';
 $page_title = 'Our Aircond Services';
-$page_desc  = 'Aircond service, chemical wash, repair, installation, gas top-up and general cleaning across the Klang Valley. All major brands.';
+$page_desc  = 'Aircond service, chemical wash, repair, installation, gas top-up and general cleaning across Kuala Lumpur and Selangor. All major brands.';
 $active='services'; $canonical='https://www.aircondexpert.my/services/';
 include __DIR__.'/inc/header.php';
 $icons=[
@@ -16,7 +16,7 @@ $icons=[
 <section class="phero"><div class="glow"></div><div class="wrap">
   <div class="crumb"><a href="/">Home</a> <span>/</span> Services</div>
   <h1>Our Aircond Services</h1>
-  <p>From a quick service to a full chemical wash or a new installation, our licensed technicians cover it all across the Klang Valley.</p>
+  <p>From a quick service to a full chemical wash or a new installation, our licensed technicians cover it all across Kuala Lumpur and Selangor.</p>
 </div></section>
 <section class="section"><div class="wrap"><div class="svc-grid" style="margin-top:0">
 <?php foreach($services as $slug=>$s): ?>
@@ -27,4 +27,5 @@ $icons=[
   </div>
 <?php endforeach; ?>
 </div></div></section>
+<?php include __DIR__.'/inc/brands.php'; ?>
 <?php include __DIR__.'/inc/footer.php'; ?>

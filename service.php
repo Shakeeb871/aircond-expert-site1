@@ -12,7 +12,7 @@ $page_keywords = !empty($s['keywords']) ? implode(', ', $s['keywords']) : '';
 $site_url = 'https://www.aircondexpert.my';
 $wa = 'https://wa.me/60123456789';
 
-$page_title = $s['title'] . ' in the Klang Valley';
+$page_title = $s['title'] . ' in Kuala Lumpur and Selangor';
 $page_desc  = $s['desc'];
 $active     = 'services';
 $canonical  = $site_url . '/services/' . $slug . '/';
@@ -49,7 +49,7 @@ $benefit_icons = [
           <img src="/assets/img/<?= $slug ?>.jpg" alt="<?= htmlspecialchars($s['title']) ?>" loading="lazy" onerror="this.style.display='none'">
         </div>
 
-        <h2>Professional <?= htmlspecialchars($s['title']) ?> in the Klang Valley</h2>
+        <h2>Professional <?= htmlspecialchars($s['title']) ?> in Kuala Lumpur and Selangor</h2>
         <?php foreach ($s['intro'] as $para): ?>
           <p><?= htmlspecialchars($para) ?></p>
         <?php endforeach; ?>

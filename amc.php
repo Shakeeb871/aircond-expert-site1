@@ -1,6 +1,6 @@
 <?php
 $page_title='Annual Maintenance Plans (AMC)';
-$page_desc='Annual aircond maintenance plans for Klang Valley homes. Scheduled servicing, priority response and no booking each time.';
+$page_desc='Annual aircond maintenance plans for Kuala Lumpur and Selangor homes. Scheduled servicing, priority response and no booking each time.';
 $active='amc'; $canonical='https://www.aircondexpert.my/amc/';
 include __DIR__.'/inc/header.php';
 ?>
