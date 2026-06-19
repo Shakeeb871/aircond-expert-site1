@@ -7,66 +7,42 @@ include __DIR__.'/inc/header.php';
 ?>
 
 <!-- HERO -->
-<section class="hero" id="top">
-  <img class="hero-bg" src="/assets/img/hero.jpg" alt="" loading="eager" onerror="this.style.display='none'">
-  <div class="glow"></div>
-  <div class="wrap">
-    <div class="hero-copy">
-      <div class="hero-trust">
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Licensed technicians</span>
-        <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg> 4.9 on Google</span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 24/7 callouts</span>
-      </div>
-      <h1>Live Better. Work Better.<br><span class="y">Sleep Deeper.</span></h1>
-      <p class="s">Stay cool all year with the Klang Valley's trusted aircond experts. Service, repair, chemical wash and installation &mdash; fixed pricing, and a real WhatsApp reply in 15 minutes.</p>
-      <div class="hero-cta">
-        <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
-        <a href="tel:+60123456789" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 12-345 6789</span></a>
-      </div>
-      <div class="hero-stats">
-        <div><b>6,000+</b><span>units serviced</span></div>
-        <div><b>10+</b><span>years experience</span></div>
-        <div><b>15 min</b><span>WhatsApp reply</span></div>
-      </div>
-    </div>
-    <div class="bookcard reveal" id="book">
-      <div class="bc-top">
-        <span class="hf-tag">Free &middot; No obligation</span>
-        <h3>Schedule Your <em>FREE</em> Estimate Today</h3>
-        <p>Tell us what you need &mdash; a real technician replies on WhatsApp, fast.</p>
-      </div>
-      <div class="bc-body">
-        <div class="bc-field">
-          <label for="bf-name">Full name</label>
-          <input id="bf-name" type="text" placeholder="e.g. Ahmad or Mei Ling">
+<section class="hero2" id="top">
+  <div class="hero2-photo">
+    <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Add the technicians hero photo</span></span>
+    <img src="/assets/img/about-team.jpg" alt="Expert air conditioner technicians at work" loading="eager" onerror="this.style.display='none'">
+  </div>
+  <div class="hero2-overlay"></div>
+  <div class="hero2-band"></div>
+  <svg class="hero2-deco" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.7 19.3l-5.6-5.6c.5-1.4.3-3-.7-4.2-1.1-1.4-3-1.9-4.6-1.4l2.9 2.9-2.1 2.1-2.9-2.9c-.5 1.6 0 3.5 1.4 4.6 1.2 1 2.8 1.2 4.2.7l5.6 5.6c.4.4 1 .4 1.4 0l.4-.4c.4-.4.4-1 0-1.4z"/></svg>
+  <div class="wrap hero2-wrap">
+    <div class="hero2-copy">
+      <span class="hero2-eyebrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg> Expert Air Conditioner Repair &amp; Maintenance</span>
+      <h1>Fast Reliable AC Repair<br>at Doorstep</h1>
+      <p>Keep your home cool and comfortable with expert AC repair, maintenance, and installation services &mdash; available 24/7 at your convenience.</p>
+      <div class="hero2-actions">
+        <a href="https://wa.me/60123456789" class="btn btn-orange"><span class="btn-txt">Book Appointment</span></a>
+        <div class="happy">
+          <span class="happy-lbl">Happy Clients</span>
+          <div class="avs">
+            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
+            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
+            <span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span>
+            <span class="av av-num">10K+</span>
+          </div>
         </div>
-        <div class="bc-row">
-          <div class="bc-field"><label for="bf-phone">Phone</label><input id="bf-phone" type="tel" placeholder="01X-XXX XXXX"></div>
-          <div class="bc-field"><label for="bf-area">Area</label><input id="bf-area" type="text" placeholder="e.g. Mont Kiara"></div>
-        </div>
-        <div class="bc-field">
-          <label for="bf-service">Service needed</label>
-          <select id="bf-service">
-            <option value="" disabled selected>Select a service</option>
-            <option>Aircond Service</option>
-            <option>Chemical Wash</option>
-            <option>Aircond Repair</option>
-            <option>Installation</option>
-            <option>Gas Top-Up</option>
-            <option>General Cleaning</option>
-            <option>Not sure, need advice</option>
-          </select>
-        </div>
-        <div class="bc-field">
-          <label for="bf-msg">What is happening?</label>
-          <textarea id="bf-msg" rows="2" placeholder="e.g. Not cooling, water dripping, 2 units"></textarea>
-        </div>
-        <button type="button" class="btn btn-wa bc-submit" id="bookBtn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Get My Free Estimate</span></button>
-        <p class="bc-note">No spam. We only use this to reply to your request.</p>
       </div>
     </div>
   </div>
+  <div class="hero2-stats">
+    <div class="wrap">
+      <div class="h2s"><b>1200+</b><span>Services Completed</span></div>
+      <div class="h2s"><b>100%</b><span>Service Guaranteed</span></div>
+      <div class="h2s"><b>85%</b><span>Repeat Customers</span></div>
+    </div>
+  </div>
 </section>
+
 
 <!-- CORE SERVICES -->
 <section class="section core" id="core">
