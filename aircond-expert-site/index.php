@@ -176,25 +176,25 @@ include __DIR__.'/inc/header.php';
   </div>
   <div class="wrap" style="max-width:none;padding:0">
     <div class="mq-mask"><div class="brand-marquee">
-      <div class="blogo"><img src="/assets/img/brands/mitsubishi-electric.png" alt="Mitsubishi Electric" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/panasonic.png" alt="Panasonic" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/hitachi.png" alt="Hitachi" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/daikin.png" alt="Daikin" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/york.png" alt="York" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/acson.png" alt="Acson" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/lg.png" alt="LG" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/samsung.png" alt="Samsung" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/midea.png" alt="Midea" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/1.png" alt="Mitsubishi Electric" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/2.png" alt="Panasonic" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/3.png" alt="Hitachi" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/4.png" alt="Daikin" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/5.png" alt="York" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/6.png" alt="Hisense" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/7.png" alt="Midea" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/8.png" alt="Acson" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/9.png" alt="Haier" loading="lazy"></div>
       <!-- duplicate set for seamless marquee -->
-      <div class="blogo"><img src="/assets/img/brands/mitsubishi-electric.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/panasonic.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/hitachi.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/daikin.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/york.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/acson.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/lg.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/samsung.png" alt="" loading="lazy"></div>
-      <div class="blogo"><img src="/assets/img/brands/midea.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/1.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/2.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/3.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/4.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/5.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/6.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/7.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/8.png" alt="" loading="lazy"></div>
+      <div class="blogo"><img src="/assets/img/brands/9.png" alt="" loading="lazy"></div>
     </div></div>
   </div>
 </section>
