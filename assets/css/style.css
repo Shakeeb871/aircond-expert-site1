@@ -480,18 +480,16 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
    HOMEPAGE REDESIGN SECTIONS (navy/yellow theme)
    ============================================================ */
 
-/* Core services */
+/* Core services (elegant svc cards) */
 .core .eyebrow{justify-content:center}
-.core-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
-.corecard{position:relative;display:block;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);background:#fff;transition:transform .25s,box-shadow .25s}
-.corecard:hover{transform:translateY(-6px);box-shadow:var(--sh)}
-.corecard .cc-img{position:relative;aspect-ratio:4/3.4;width:100%}
-.corecard .cc-img::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,29,71,0) 42%,rgba(8,29,71,.82) 100%)}
-.corecard .cc-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;padding:22px 22px 20px;color:#fff}
-.corecard .cc-cap h3{font-size:20px;color:#fff;letter-spacing:-.01em}
-.corecard .go{display:inline-flex;align-items:center;gap:7px;margin-top:9px;font-family:var(--d);font-weight:700;font-size:13.5px;color:var(--yellow)}
-.corecard .go svg{width:16px;height:16px;transition:transform .2s}
-.corecard:hover .go svg{transform:translateX(4px)}
+.core .svc{display:block;color:inherit}
+.core .svc-img{aspect-ratio:16/11}
+.core .svc-body{position:relative;padding-top:34px}
+.svc-ic{position:absolute;top:-26px;left:26px;width:52px;height:52px;border-radius:15px;background:linear-gradient(140deg,var(--navy),var(--navy-2));color:var(--yellow);display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -12px rgba(14,57,136,.75)}
+.svc-ic svg{width:26px;height:26px}
+.core .svc .go{display:inline-flex;align-items:center;gap:7px;margin-top:4px;font-family:var(--d);font-weight:700;font-size:13.5px;color:var(--navy)}
+.core .svc .go svg{width:16px;height:16px;transition:transform .2s}
+.core .svc:hover .go svg{transform:translateX(4px)}
 
 /* Comfort in 3 steps */
 .comfort-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
@@ -520,10 +518,19 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
 .wsc.t-pnk{background:#fdeef2}.wsc.t-pnk .ws-num .y{color:#d8628a}
 .wsc.t-grn{background:#e8f7ee}.wsc.t-grn .ws-num .y{color:#2faa5e}
 
-/* Showcase band */
-.showcase{position:relative;height:clamp(260px,42vw,460px);overflow:hidden}
-.showcase .sc-img{width:100%;height:100%}
-.showcase .sc-img::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(8,29,71,.45),rgba(8,29,71,.05));z-index:3}
+/* Showcase CTA band */
+.showcase{position:relative;min-height:clamp(360px,46vw,500px);overflow:hidden;display:flex;align-items:center}
+.showcase .sc-img{position:absolute;inset:0;width:100%;height:100%}
+.showcase .sc-img::after{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(100deg,rgba(7,24,63,.94) 0%,rgba(11,38,90,.82) 46%,rgba(8,29,71,.4) 100%)}
+.showcase .sc-inner{position:relative;z-index:4;width:100%;max-width:var(--maxw);margin:0 auto;padding:64px 22px}
+.sc-content{max-width:600px;color:#fff}
+.sc-content .eyebrow{margin-bottom:16px}
+.sc-content h2{font-size:clamp(28px,3.8vw,46px);color:#fff;text-shadow:0 2px 22px rgba(4,14,40,.45)}
+.sc-content>p{font-size:18px;color:#dbe8f6;margin:16px 0 28px;max-width:52ch}
+.sc-cta{display:flex;flex-wrap:wrap;gap:13px}
+.sc-trust{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:24px}
+.sc-trust span{display:inline-flex;align-items:center;gap:8px;font-family:var(--d);font-weight:600;font-size:14px;color:#dceaf8}
+.sc-trust svg{width:16px;height:16px;color:var(--yellow)}
 
 /* Premium units */
 .units{background:var(--ice-2)}

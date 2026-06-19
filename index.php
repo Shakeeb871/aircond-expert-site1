@@ -69,20 +69,32 @@ include __DIR__.'/inc/header.php';
   <div class="wrap center">
     <span class="eyebrow">What We Do</span>
     <h2 style="margin-top:12px">Our Core Services</h2>
-    <p class="sub">Three things we do every day, handled end to end by our own licensed technicians.</p>
+    <p class="sub">Everything your aircond needs, handled end to end by our own licensed, in-house technicians.</p>
   </div>
-  <div class="wrap"><div class="core-grid reveal">
-    <a href="/services/installation/" class="corecard">
-      <div class="cc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Installation photo</span></span><img src="/assets/img/installation.jpg" alt="Air conditioning installation" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="cc-cap"><h3>Air Conditioning Installation</h3><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+  <div class="wrap"><div class="svc-grid reveal">
+    <a href="/services/aircond-service/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Service photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Aircond Service" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M5 5l2 2M17 17l2 2M2 12h3M19 12h3M5 19l2-2M17 7l2-2"/></svg></span><h3>Aircond Service</h3><p>Filter, coil and drainage care that brings cooling back and keeps your bill down.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
-    <a href="/services/aircond-repair/" class="corecard">
-      <div class="cc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Repair photo</span></span><img src="/assets/img/aircond-repair.jpg" alt="Air conditioning repairs" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="cc-cap"><h3>Air Conditioning Repairs</h3><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    <a href="/services/chemical-wash/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Chemical Wash photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical Wash" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l8-8M14 4l6 6-9 9H5v-6z"/></svg></span><h3>Chemical Wash</h3><p>A 90 to 120 minute deep clean of coil and blower that revives weak, smelly units.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
-    <a href="/services/aircond-service/" class="corecard">
-      <div class="cc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Maintenance photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Air conditioning maintenance" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="cc-cap"><h3>Air Conditioning Maintenance</h3><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    <a href="/services/aircond-repair/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Repair photo</span></span><img src="/assets/img/aircond-repair.jpg" alt="Aircond Repair" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/></svg></span><h3>Aircond Repair</h3><p>Capacitor, PCB, fan motor, compressor and gas faults, diagnosed and fixed the same visit.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a href="/services/installation/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Installation photo</span></span><img src="/assets/img/installation.jpg" alt="Installation" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="11" rx="2"/><path d="M6 12h12M9 20h6"/></svg></span><h3>Installation</h3><p>Wall split supply and fit with OEM brackets, copper pipe and a full cooling test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a href="/services/gas-top-up/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Gas Top-Up photo</span></span><img src="/assets/img/gas-top-up.jpg" alt="Gas Top-Up" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2s5 5 5 9a5 5 0 01-10 0c0-4 5-9 5-9z"/></svg></span><h3>Gas Top-Up</h3><p>Leak check first, then the correct refrigerant (R32, R410A, R22) and a pressure test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+    </a>
+    <a href="/services/general-cleaning/" class="svc">
+      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>General Cleaning photo</span></span><img src="/assets/img/general-cleaning.jpg" alt="General Cleaning" loading="lazy" onerror="this.style.display='none'"></div>
+      <div class="svc-body"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg></span><h3>General Cleaning</h3><p>Filter and cover wash that restores airflow and keeps your room air fresh between services.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
   </div></div>
 </section>
@@ -136,9 +148,25 @@ include __DIR__.'/inc/header.php';
   </div></div>
 </section>
 
-<!-- SHOWCASE BAND -->
+<!-- SHOWCASE CTA BAND -->
 <section class="showcase">
-  <div class="sc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Add a wide interior / installed unit photo</span></span><img src="/assets/img/work-1.jpg" alt="Installed air conditioning unit in a modern home" loading="lazy" onerror="this.style.display='none'"></div>
+  <div class="sc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Add a wide interior / installed unit photo</span></span><img src="/assets/img/work-1.jpg" alt="Cool, comfortable home with a freshly serviced air conditioner" loading="lazy" onerror="this.style.display='none'"></div>
+  <div class="sc-inner">
+    <div class="sc-content reveal">
+      <span class="eyebrow on-dark">Beat The Heat Today</span>
+      <h2>Don't sweat it &mdash; let our experts keep you cool</h2>
+      <p>Aircond not cooling, dripping water or running up your bill? Get a licensed technician at your door, a fixed price agreed first, and cold air back fast.</p>
+      <div class="sc-cta">
+        <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
+        <a href="tel:+60123456789" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 12-345 6789</span></a>
+      </div>
+      <div class="sc-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> 15-min WhatsApp reply</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> Same-day where slots allow</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> 1-year warranty</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- TRUSTED EXPERTS (about) -->
@@ -146,8 +174,8 @@ include __DIR__.'/inc/header.php';
   <div class="wrap about-grid">
     <div class="about-visual reveal">
       <div class="av-frame imgph">
-        <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.4"/><path d="M3.5 20a5.5 5.5 0 0111 0M16 4a3 3 0 010 6M21.5 20a5.5 5.5 0 00-4-5.3"/></svg><span>Add a team or technician photo</span></span>
-        <img src="/assets/img/about-team.jpg" alt="Aiqon Quick Cool technicians at work" loading="lazy" onerror="this.style.display='none'">
+        <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 6l-4 4-3-3-5 5v5h5l9-9z"/><path d="M14 6l4-4 2 2-4 4z"/></svg><span>Add a technician-at-work photo</span></span>
+        <img src="/assets/img/work-6.jpg" alt="Licensed technician servicing an air conditioning unit" loading="lazy" onerror="this.style.display='none'">
       </div>
       <div class="av-badge"><b>10+</b><span>years<br>of service</span></div>
       <div class="av-badge2"><div class="st"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5.9 20.4l1.4-6.8L2.2 9l6.9-.7z"/></svg></div><span>4.9 on Google</span></div>
