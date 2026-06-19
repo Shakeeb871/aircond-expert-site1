@@ -48,40 +48,56 @@ include __DIR__.'/inc/header.php';
 </section>
 
 
-<!-- CORE SERVICES -->
-<section class="section core" id="core">
+<!-- CORE SERVICES (bento) -->
+<section class="section services2" id="core">
   <div class="wrap center">
-    <span class="eyebrow">What We Do</span>
-    <h2 style="margin-top:12px">Our Core Services</h2>
-    <p class="sub">Everything your aircond needs, handled end to end by our own licensed, in-house technicians.</p>
+    <span class="eyebrow">Our Services</span>
+    <h2 style="margin-top:12px">Professional Air Conditioning Solutions for Every Need</h2>
+    <p class="sub">We deliver reliable, fast and professional aircond services to keep your home cool, efficient and comfortable all year round.</p>
   </div>
-  <div class="wrap"><div class="svc-grid reveal">
-    <a href="/services/aircond-service/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Service photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Aircond Service" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>Aircond Service</h3><p>Filter, coil and drainage care that brings cooling back and keeps your bill down.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/services/chemical-wash/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Chemical Wash photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical Wash" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>Chemical Wash</h3><p>A 90 to 120 minute deep clean of coil and blower that revives weak, smelly units.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/services/aircond-repair/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Aircond Repair photo</span></span><img src="/assets/img/aircond-repair.jpg" alt="Aircond Repair" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>Aircond Repair</h3><p>Capacitor, PCB, fan motor, compressor and gas faults, diagnosed and fixed the same visit.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/services/installation/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Installation photo</span></span><img src="/assets/img/installation.jpg" alt="Installation" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>Installation</h3><p>Wall split supply and fit with OEM brackets, copper pipe and a full cooling test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/services/gas-top-up/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Gas Top-Up photo</span></span><img src="/assets/img/gas-top-up.jpg" alt="Gas Top-Up" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>Gas Top-Up</h3><p>Leak check first, then the correct refrigerant (R32, R410A, R22) and a pressure test.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-    <a href="/services/general-cleaning/" class="svc">
-      <div class="svc-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>General Cleaning photo</span></span><img src="/assets/img/general-cleaning.jpg" alt="General Cleaning" loading="lazy" onerror="this.style.display='none'"></div>
-      <div class="svc-body"><h3>General Cleaning</h3><p>Filter and cover wash that restores airflow and keeps your room air fresh between services.</p><span class="go">Learn more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
-    </a>
-  </div></div>
+  <div class="wrap">
+    <div class="bento-panel reveal">
+      <div class="bento-grid">
+
+        <a href="/services/installation/" class="bento b-wide">
+          <div class="bento-head"><h3>Professional AC Installation</h3><p>Wall split supply and fit with OEM brackets, copper pipe and a full cooling test for split, window and central systems.</p></div>
+          <div class="bento-img imgph">
+            <span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Installation photo</span></span>
+            <img src="/assets/img/installation.jpg" alt="Professional AC installation" loading="lazy" onerror="this.style.display='none'">
+            <span class="bento-badge"><span class="avs"><span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span><span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span><span class="av"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg></span></span><b>Licensed in-house team</b></span>
+          </div>
+        </a>
+
+        <a href="/services/aircond-repair/" class="bento b-narrow">
+          <div class="bento-head"><h3>Expert AC Repair</h3><p>Quick and expert AC repair for cooling, leakage, noise and gas problems &mdash; diagnosed and fixed the same visit.</p></div>
+          <div class="bento-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Repair photo</span></span><img src="/assets/img/aircond-repair.jpg" alt="Expert AC repair" loading="lazy" onerror="this.style.display='none'"></div>
+        </a>
+
+        <a href="/services/gas-top-up/" class="bento b-narrow">
+          <div class="bento-head"><h3>AC Gas Refill</h3><p>Certified gas refill (R32, R410A, R22) that restores cooling performance safely and efficiently.</p></div>
+          <div class="bento-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Gas refill photo</span></span><img src="/assets/img/gas-top-up.jpg" alt="AC gas refill" loading="lazy" onerror="this.style.display='none'"></div>
+        </a>
+
+        <div class="bento b-wide">
+          <div class="bento-head"><h3>Professional AC Maintenance</h3><p>Routine servicing improves cooling and extends your unit&rsquo;s lifespan &mdash; filter, coil and drainage care.</p><a href="/services/" class="btn btn-y bento-btn"><span class="btn-txt">View All Services</span></a></div>
+          <div class="bento-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Maintenance photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Professional AC maintenance" loading="lazy" onerror="this.style.display='none'"></div>
+        </div>
+
+        <a href="/services/chemical-wash/" class="bento b-wide">
+          <div class="bento-head"><h3>Chemical Wash</h3><p>A 90 to 120 minute deep clean of coil and blower that revives weak, smelly units and restores strong airflow.</p></div>
+          <div class="bento-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Chemical wash photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical wash" loading="lazy" onerror="this.style.display='none'"></div>
+        </a>
+
+        <a href="/services/general-cleaning/" class="bento b-narrow">
+          <div class="bento-head"><h3>General Cleaning</h3><p>Filter and cover wash that restores airflow and keeps your room air fresh between full services.</p></div>
+          <div class="bento-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>General cleaning photo</span></span><img src="/assets/img/general-cleaning.jpg" alt="General cleaning" loading="lazy" onerror="this.style.display='none'"></div>
+        </a>
+
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- COMFORT IN 3 STEPS -->
 <section class="section comfort" id="comfort">
