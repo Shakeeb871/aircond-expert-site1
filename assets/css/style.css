@@ -684,17 +684,19 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
    SERVICES — bento grid (all services)
    ============================================================ */
 .services2 .eyebrow{justify-content:center}
-.bento-panel{margin-top:46px;background:linear-gradient(180deg,#fbfdff,#f2f7fd);border:1px solid var(--line);border-radius:28px;padding:clamp(16px,2.4vw,26px)}
-.bento-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,1.6vw,18px)}
-.bento{grid-column:span 6;display:flex;flex-direction:column;min-height:300px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;color:inherit;transition:transform .25s,box-shadow .25s}
+.bento-panel{margin-top:46px;background:none;border:none;padding:0}
+.bento-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(14px,1.6vw,20px)}
+.bento{grid-column:span 6;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;color:inherit;transition:transform .25s,box-shadow .25s}
 .bento:hover{transform:translateY(-5px);box-shadow:var(--sh)}
 .bento.b-wide{grid-column:span 7}
 .bento.b-narrow{grid-column:span 5}
-.bento-head{padding:24px 24px 16px}
+.bento-head{padding:24px 24px 18px}
 .bento-head h3{font-size:20px;color:var(--navy-deep)}
 .bento-head p{font-size:14.5px;color:var(--muted);margin-top:8px;max-width:46ch}
-.bento-btn{margin-top:16px;border-radius:999px;padding:11px 24px}
-.bento-img{position:relative;flex:1;min-height:165px}
+.bento-link{display:inline-flex;align-items:center;gap:7px;margin-top:15px;font-family:var(--d);font-weight:700;font-size:13.5px;color:var(--navy);background:none}
+.bento-link svg{width:16px;height:16px;transition:transform .2s}
+.bento:hover .bento-link svg{transform:translateX(4px)}
+.bento-img{position:relative;aspect-ratio:16/10;flex:none;margin-top:auto}
 .bento-badge{position:absolute;left:14px;bottom:14px;z-index:3;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:999px;padding:6px 14px 6px 6px;box-shadow:0 10px 24px -12px rgba(14,57,136,.55)}
 .bento-badge .avs{display:flex}
 .bento-badge .av{width:27px;height:27px;border-radius:50%;border:2px solid #fff;margin-left:-9px;background:linear-gradient(140deg,var(--navy),var(--navy-2));display:flex;align-items:center;justify-content:center;color:#fff;overflow:hidden}
@@ -704,9 +706,7 @@ footer{background:var(--navy-ink);color:#a9c2e0;padding:66px 0 28px;font-size:14
 
 @media(max-width:900px){
   .bento,.bento.b-wide,.bento.b-narrow{grid-column:span 6}
-  .bento{min-height:280px}
 }
 @media(max-width:600px){
   .bento,.bento.b-wide,.bento.b-narrow{grid-column:span 12}
-  .bento{min-height:290px}
 }
