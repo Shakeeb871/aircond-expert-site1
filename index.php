@@ -31,9 +31,18 @@ include __DIR__.'/inc/header.php';
   </div>
   <div class="hero2-stats">
     <div class="wrap">
-      <div class="h2s"><b>1200+</b><span>Services Completed</span></div>
-      <div class="h2s"><b>100%</b><span>Service Guaranteed</span></div>
-      <div class="h2s"><b>85%</b><span>Repeat Customers</span></div>
+      <div class="hero2-trustbadge">
+        <span class="tb-ring"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div class="tb-txt">
+          <b>SSM Registered &amp; Insured</b>
+          <span>Energy Commission (ST) licensed technicians</span>
+        </div>
+      </div>
+      <div class="h2s-group">
+        <div class="h2s"><b>1200+</b><span>Services Completed</span></div>
+        <div class="h2s"><b>100%</b><span>Service Guaranteed</span></div>
+        <div class="h2s"><b>85%</b><span>Repeat Customers</span></div>
+      </div>
     </div>
   </div>
 </section>
