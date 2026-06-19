@@ -1,35 +1,36 @@
 <?php
 /* ------------------------------------------------------------------
-   Deployment settings. Edit these on your server (cPanel).
-   This file is blocked from the web by .htaccess.
+   Base configuration — SAFE TO COMMIT (no secrets here).
+   Put your real secrets (DB password, admin key) in:
+        api/config.local.php
+   That file is git-ignored, so deploys/pulls never touch it and you
+   never get "local changes would be overwritten" errors again.
+   See api/config.local.sample.php for the template.
 -------------------------------------------------------------------*/
-return [
-  // Where enquiry emails are delivered
-  'to_email'   => 'shujaatshakeeb26@gmail.com',
-
-  // The "From" address — MUST be a real mailbox on YOUR domain
-  // (create it in cPanel -> Email Accounts) for good deliverability.
-  'from_email' => 'noreply@aircondexpert.my',
-
+$config = [
+  'to_email'   => 'shujaatshakeeb26@gmail.com',     // where enquiries are emailed
+  'from_email' => 'noreply@aiqonquickcool.com.my',  // a real mailbox on your domain
   'site_name'  => 'Aiqon Quick Cool',
-  'log_file'   => __DIR__ . '/leads.log',   // plain-text backup of every lead
+  'log_file'   => __DIR__ . '/leads.log',
 
-  /* ---- MySQL database ----------------------------------------------
-     1) cPanel -> MySQL Databases: create a database + a user, add the
-        user to the database with ALL PRIVILEGES.
-     2) Fill in the four values below.
-     3) Set 'enabled' => true.
-     The "leads" table is created automatically on the first submission.
-  -------------------------------------------------------------------*/
   'db' => [
     'enabled' => false,
     'host'    => 'localhost',
-    'name'    => 'CPANELUSER_aircond',   // e.g. shakeeb_aircond
-    'user'    => 'CPANELUSER_aircond',   // e.g. shakeeb_aircond
-    'pass'    => 'YOUR_DB_PASSWORD',
+    'name'    => '',
+    'user'    => '',
+    'pass'    => '',
   ],
 
-  // Password for the leads viewer at /leads.php  (a login box will ask for it).
-  // CHANGE this to a long random string.
-  'admin_key' => 'change-this-to-a-long-random-key',
+  'admin_key' => 'change-me',
 ];
+
+/* Local overrides (your secrets) — not tracked by git */
+$local = __DIR__ . '/config.local.php';
+if (is_file($local)) {
+  $over = require $local;
+  if (is_array($over)) {
+    $config = array_replace_recursive($config, $over);
+  }
+}
+
+return $config;

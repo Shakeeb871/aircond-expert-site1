@@ -10,7 +10,7 @@ RewriteBase /
 RewriteRule ^(inc|data)/ - [F,L]
 
 # --- block sensitive / source files ---
-<FilesMatch "(config\.php|leads\.log)$">
+<FilesMatch "(config(\.local)?\.php|leads\.log)$">
   Require all denied
 </FilesMatch>
 <FilesMatch "(?i)\.(sql|log|md|ya?ml|ini|sh|bak|inc)$">
