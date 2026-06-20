@@ -846,3 +846,9 @@ footer::before{content:"";display:block;height:3px;background:linear-gradient(90
   .abs .n{font-size:28px}
   .ab-collage{padding:0 24px 30px 0}
 }
+
+/* AJAX form inline message */
+.form-msg{margin-top:12px;padding:12px 15px;border-radius:11px;font-size:14px;line-height:1.55;display:none}
+.form-msg.show{display:block}
+.form-msg.ok{background:#e7f8ee;border:1px solid #bfe8cf;color:#1f7a45}
+.form-msg.bad{background:#fdeaea;border:1px solid #f3c2c2;color:#b23b3b}

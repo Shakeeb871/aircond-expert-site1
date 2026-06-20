@@ -84,12 +84,14 @@
   });
 })();
 
-/* Lead forms: one button saves the enquiry (DB + email) AND opens WhatsApp.
-   On submit (after native validation passes) we open a prefilled WhatsApp
-   chat in a new tab, then let the form POST normally to /api/contact.php. */
+/* Lead forms: one button. On submit (after native validation) it opens a
+   prefilled WhatsApp chat AND saves the enquiry via AJAX (DB + email) with
+   NO page reload and NO ?sent=1 in the URL — just an inline thank-you. */
 (function(){
   document.querySelectorAll('form.lead-form').forEach(function(form){
-    form.addEventListener('submit',function(){
+    var msg=document.createElement('div'); msg.className='form-msg'; form.appendChild(msg);
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
       function v(n){var el=form.querySelector('[name="'+n+'"]');return el?(''+el.value).trim():'';}
       var t='Hi Aiqon Quick Cool, I would like a quote.';
       [['Name','name'],['Phone','phone'],['Email','email'],['Area','area'],['Service','service'],['Message','message']].forEach(function(p){
@@ -97,7 +99,26 @@
       });
       var num=form.getAttribute('data-wa')||'60123456789';
       window.open('https://wa.me/'+num+'?text='+encodeURIComponent(t),'_blank');
-      // no preventDefault: the form still submits -> saves to DB + emails you
+
+      var btn=form.querySelector('[type="submit"]'); if(btn) btn.disabled=true;
+      var data=new FormData(form); data.append('ajax','1');
+      fetch(form.getAttribute('action')||'/api/contact.php',{
+        method:'POST', body:data, headers:{'X-Requested-With':'XMLHttpRequest'}
+      }).then(function(r){return r.json().catch(function(){return {ok:true};});})
+        .then(function(res){
+          if(btn) btn.disabled=false;
+          if(res && res.ok===false){
+            msg.className='form-msg bad show'; msg.textContent=res.error||'Please check your details and try again.';
+          }else{
+            msg.className='form-msg ok show';
+            msg.textContent='Thank you! Your enquiry has been received — we will reply shortly. (We also opened WhatsApp so you can message us directly.)';
+            form.reset();
+          }
+        }).catch(function(){
+          if(btn) btn.disabled=false;
+          msg.className='form-msg ok show';
+          msg.textContent='We have opened WhatsApp for you — please tap send there so we get your message.';
+        });
     });
   });
 })();

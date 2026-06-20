@@ -1,10 +1,23 @@
 <?php
 $cfg = require __DIR__ . '/config.php';
 
+$isAjax = (isset($_POST['ajax']) && $_POST['ajax'] === '1')
+       || (strtolower($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'xmlhttprequest');
+
+function respond($isAjax, $ok, $err = '') {
+  if ($isAjax) {
+    header('Content-Type: application/json');
+    echo json_encode(['ok' => $ok, 'error' => $err]);
+    exit;
+  }
+  header('Location: /contact/?' . ($ok ? 'sent=1' : 'err=1'));
+  exit;
+}
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { header('Location: /contact/'); exit; }
 
-// honeypot: bots fill the hidden "company" field
-if (!empty($_POST['company'])) { header('Location: /contact/?sent=1'); exit; }
+// honeypot: bots fill the hidden "company" field — pretend success
+if (!empty($_POST['company'])) { respond($isAjax, true); }
 
 function clean($k){ return isset($_POST[$k]) ? trim(strip_tags($_POST[$k])) : ''; }
 $name=clean('name'); $phone=clean('phone'); $email=clean('email'); $area=clean('area');
@@ -15,7 +28,7 @@ if (!empty($_SERVER['HTTP_REFERER'])) {
   $source = substr((string)(parse_url($_SERVER['HTTP_REFERER'], PHP_URL_PATH) ?: ''), 0, 160);
 }
 
-if ($name === '' || $phone === '') { header('Location: /contact/?err=1'); exit; }
+if ($name === '' || $phone === '') { respond($isAjax, false, 'Please enter your name and phone number.'); }
 
 // 1) Save to the database (best-effort; never blocks the enquiry)
 if (!empty($cfg['db']['enabled'])) {
@@ -63,5 +76,4 @@ $headers = 'From: '.$cfg['site_name'].' <'.$cfg['from_email'].">\r\n".
            'Content-Type: text/plain; charset=UTF-8';
 @mail($cfg['to_email'], $subject, $body, $headers);
 
-header('Location: /contact/?sent=1');
-exit;
+respond($isAjax, true);
