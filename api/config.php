@@ -14,7 +14,7 @@ $config = [
   'log_file'   => __DIR__ . '/leads.log',
 
   'db' => [
-    'enabled' => false,
+    'enabled' => true,
     'host'    => 'localhost',
     'name'    => 'carpente_aiqonquickcool',
     'user'    => 'carpente_aiqonquickcooll',
