@@ -1,6 +1,11 @@
 <?php
 /* Key-protected leads dashboard. */
 session_start();
+/* never cache this page (LiteSpeed/cPanel can serve stale output otherwise) */
+header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+header('Pragma: no-cache');
+header('Expires: 0');
+header('X-LiteSpeed-Cache-Control: no-cache');
 $cfg = require __DIR__ . '/api/config.php';
 
 $adminKey = is_string($cfg['admin_key'] ?? null) ? $cfg['admin_key'] : '';

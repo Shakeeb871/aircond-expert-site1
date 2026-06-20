@@ -29,6 +29,7 @@ include __DIR__.'/inc/header.php';
           <div class="bc-field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="01X-XXX XXXX"></div>
           <div class="bc-field"><label for="area">Area</label><input id="area" name="area" type="text" placeholder="e.g. Mont Kiara"></div>
         </div>
+        <div class="bc-field"><label for="email">Email <span style="color:#9fb0c4">(optional)</span></label><input id="email" name="email" type="email" placeholder="you@example.com"></div>
         <div class="bc-field"><label for="service">Service needed</label>
           <select id="service" name="service">
             <option value="" disabled selected>Select a service</option>
