@@ -57,7 +57,7 @@ $rows = []; $err = '';
 try {
   $d = $cfg['db'];
   $pdo = new PDO("mysql:host={$d['host']};dbname={$d['name']};charset=utf8mb4", $d['user'], $d['pass'],
-    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_TIMEOUT => 5]);
   $rows = $pdo->query("SELECT * FROM leads ORDER BY id DESC LIMIT 1000")->fetchAll(PDO::FETCH_ASSOC);
 } catch (Throwable $e) { $err = $e->getMessage(); }
 
@@ -87,10 +87,13 @@ foreach($rows as $r){ $ts=strtotime((string)$r['created_at']); if(!$ts)continue;
   .top a.out:hover{background:rgba(255,255,255,.24)}
   .page{max-width:1200px;margin:0 auto;padding:22px}
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
-  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 14px 34px -26px rgba(14,57,136,.5)}
-  .card .n{font-size:30px;font-weight:800;line-height:1;color:var(--navy)}
-  .card .l{font-size:13px;color:var(--muted);margin-top:7px;display:flex;align-items:center;gap:7px}
-  .card .l .dot{width:9px;height:9px;border-radius:50%}
+  .card{display:flex;align-items:center;gap:15px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:0 14px 34px -26px rgba(14,57,136,.5);transition:transform .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 22px 44px -26px rgba(14,57,136,.6)}
+  .card .ic{width:50px;height:50px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+  .card .ic svg{width:24px;height:24px;color:#fff}
+  .card .n{font-size:27px;font-weight:800;line-height:1;color:var(--ink)}
+  .card .l{font-size:12.5px;color:var(--muted);margin-top:5px}
+  .lav{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(140deg,var(--navy),var(--navy2));color:#fff;font-weight:700;font-size:12px;margin-right:9px;vertical-align:middle}
   .panel{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 34px -26px rgba(14,57,136,.5);overflow:hidden}
   .panel .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
   .panel .bar h2{font-size:15px;margin:0}
@@ -131,10 +134,10 @@ foreach($rows as $r){ $ts=strtotime((string)$r['created_at']); if(!$ts)continue;
   <div class="panel"><div class="err">Database error: <?= h($err) ?></div></div>
 <?php else: ?>
   <div class="cards">
-    <div class="card"><div class="n"><?= $total ?></div><div class="l"><span class="dot" style="background:#15489C"></span> Total leads</div></div>
-    <div class="card"><div class="n"><?= $today ?></div><div class="l"><span class="dot" style="background:#1f9d57"></span> Today</div></div>
-    <div class="card"><div class="n"><?= $week ?></div><div class="l"><span class="dot" style="background:#e0b400"></span> Last 7 days</div></div>
-    <div class="card"><div class="n"><?= $month ?></div><div class="l"><span class="dot" style="background:#d8628a"></span> This month</div></div>
+    <div class="card"><span class="ic" style="background:#15489C"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.9"/></svg></span><div><div class="n"><?= $total ?></div><div class="l">Total leads</div></div></div>
+    <div class="card"><span class="ic" style="background:#1f9d57"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><div><div class="n"><?= $today ?></div><div class="l">Today</div></div></div>
+    <div class="card"><span class="ic" style="background:#e0b400"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><div class="n"><?= $week ?></div><div class="l">Last 7 days</div></div></div>
+    <div class="card"><span class="ic" style="background:#d8628a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></span><div><div class="n"><?= $month ?></div><div class="l">This month</div></div></div>
   </div>
 
   <div class="panel">
@@ -159,7 +162,7 @@ foreach($rows as $r){ $ts=strtotime((string)$r['created_at']); if(!$ts)continue;
           <tr>
             <td><?= h($r['id']) ?></td>
             <td><?= $ts ? date('M j, Y', $ts).'<br><span style="color:#9fb0c4;font-size:12px">'.date('g:i A',$ts).'</span>' : h($r['created_at']) ?></td>
-            <td class="who"><?= h($r['name']) ?></td>
+            <td class="who"><span class="lav"><?= h(strtoupper(substr((string)$r['name'],0,1))) ?></span><?= h($r['name']) ?></td>
             <td class="ph"><?= h($r['phone']) ?></td>
             <td><?= h($r['email']) ?></td>
             <td><?= h($r['area']) ?></td>
