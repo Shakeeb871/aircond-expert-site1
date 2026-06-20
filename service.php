@@ -114,16 +114,15 @@ $benefit_icons = [
       <aside class="sd-aside">
         <div class="sd-card">
           <div class="top"><h3>Get a Free Quote</h3><p>Tell us about your <?= htmlspecialchars(strtolower($s['title'])) ?> and we reply fast on WhatsApp.</p></div>
-          <form class="bd" action="/api/contact.php" method="post">
+          <form class="bd lead-form" data-wa="60123456789" action="/api/contact.php" method="post">
             <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
             <input type="hidden" name="service" value="<?= htmlspecialchars($s['title']) ?>">
             <div class="bc-field"><label for="sf-name">Full name</label><input id="sf-name" name="name" type="text" placeholder="Your name" required></div>
             <div class="bc-field"><label for="sf-phone">Phone</label><input id="sf-phone" name="phone" type="tel" placeholder="01X-XXX XXXX" required></div>
             <div class="bc-field"><label for="sf-area">Area</label><input id="sf-area" name="area" type="text" placeholder="e.g. Mont Kiara"></div>
             <div class="bc-field"><label for="sf-msg">What do you need?</label><textarea id="sf-msg" name="message" rows="3" placeholder="e.g. 2 units, not cooling well"></textarea></div>
-            <button type="submit" class="btn btn-navy" style="width:100%;justify-content:center"><span class="btn-txt">Request Free Quote</span></button>
-            <button type="button" class="btn btn-wa wa-send" style="width:100%;justify-content:center;margin-top:10px"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Send on WhatsApp</span></button>
-            <p class="bc-note">No spam. We only use this to reply to your request.</p>
+            <button type="submit" class="btn btn-wa" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Send Enquiry</span></button>
+            <p class="bc-note">We save your request and email our team, then open WhatsApp so you can confirm instantly.</p>
           </form>
         </div>
 

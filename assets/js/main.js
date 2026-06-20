@@ -84,18 +84,20 @@
   });
 })();
 
-/* "Send on WhatsApp" buttons inside forms — compose a message from the fields */
+/* Lead forms: one button saves the enquiry (DB + email) AND opens WhatsApp.
+   On submit (after native validation passes) we open a prefilled WhatsApp
+   chat in a new tab, then let the form POST normally to /api/contact.php. */
 (function(){
-  document.querySelectorAll('.wa-send').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      var form=btn.closest('form'); if(!form)return;
+  document.querySelectorAll('form.lead-form').forEach(function(form){
+    form.addEventListener('submit',function(){
       function v(n){var el=form.querySelector('[name="'+n+'"]');return el?(''+el.value).trim():'';}
       var t='Hi Aiqon Quick Cool, I would like a quote.';
       [['Name','name'],['Phone','phone'],['Email','email'],['Area','area'],['Service','service'],['Message','message']].forEach(function(p){
         var val=v(p[1]); if(val) t+='\n'+p[0]+': '+val;
       });
-      var num=btn.getAttribute('data-wa')||'60123456789';
+      var num=form.getAttribute('data-wa')||'60123456789';
       window.open('https://wa.me/'+num+'?text='+encodeURIComponent(t),'_blank');
+      // no preventDefault: the form still submits -> saves to DB + emails you
     });
   });
 })();
