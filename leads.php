@@ -54,6 +54,9 @@ if (!$authed) {
   exit;
 }
 
+if (empty($_SESSION['csrf'])) { $_SESSION['csrf'] = bin2hex(random_bytes(16)); }
+$csrf = $_SESSION['csrf'];
+
 if (empty($cfg['db']['enabled'])) {
   exit('Database is not enabled yet. Set db.enabled => true in api/config.local.php with your MySQL details.');
 }
@@ -70,6 +73,15 @@ try {
     source VARCHAR(160) NULL, ip VARCHAR(45) NULL,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
+
+  // delete a lead (POST + CSRF, session already authenticated)
+  if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])
+      && !empty($_POST['csrf']) && hash_equals($csrf, (string)$_POST['csrf'])) {
+    $pdo->prepare("DELETE FROM leads WHERE id = ?")->execute([(int)$_POST['delete_id']]);
+    header('Location: /leads.php'); // redirect so a refresh won't re-delete
+    exit;
+  }
+
   $rows = $pdo->query("SELECT * FROM leads ORDER BY id DESC LIMIT 1000")->fetchAll(PDO::FETCH_ASSOC);
 } catch (Throwable $e) { $err = $e->getMessage(); }
 
@@ -127,6 +139,9 @@ foreach($rows as $r){ $ts=strtotime((string)$r['created_at']); if(!$ts)continue;
   .acts a.wa{background:#e7f8ee;color:#1f9d57}
   .acts a:hover{filter:brightness(.96)}
   .acts svg{width:16px;height:16px}
+  .acts .del{width:30px;height:30px;border-radius:8px;border:none;cursor:pointer;background:#fdeaea;color:#d23b3b;display:flex;align-items:center;justify-content:center;padding:0}
+  .acts .del:hover{background:#f7d4d4}
+  .acts form{margin:0}
   .ph{font-weight:600;color:var(--ink)}
   .empty{padding:48px;text-align:center;color:var(--muted)}
   .err{padding:20px;color:#b23b3b}
@@ -184,6 +199,11 @@ foreach($rows as $r){ $ts=strtotime((string)$r['created_at']); if(!$ts)continue;
             <td><div class="acts">
               <a class="call" href="tel:<?= h($r['phone']) ?>" title="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></a>
               <?php if($wa): ?><a class="wa" target="_blank" href="https://wa.me/<?= h($wa) ?>" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 1112 20z"/></svg></a><?php endif; ?>
+              <form method="post" action="/leads.php" style="display:inline" onsubmit="return confirm('Delete this lead permanently?');">
+                <input type="hidden" name="csrf" value="<?= h($csrf) ?>">
+                <input type="hidden" name="delete_id" value="<?= h($r['id']) ?>">
+                <button type="submit" class="del" title="Delete"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6M10 11v6M14 11v6"/></svg></button>
+              </form>
             </div></td>
           </tr>
         <?php endforeach; ?>
