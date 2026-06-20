@@ -16,12 +16,12 @@ $config = [
   'db' => [
     'enabled' => false,
     'host'    => 'localhost',
-    'name'    => '',
-    'user'    => '',
-    'pass'    => '',
+    'name'    => 'carpente_aiqonquickcool',
+    'user'    => 'carpente_aiqonquickcooll',
+    'pass'    => 'ASDJKH2918@Q&^Y&*HASDJh7892h',
   ],
 
-  'admin_key' => 'change-me',
+  'admin_key' => 'aiqonquickcool@756@^@*&',
 ];
 
 /* Local overrides (your secrets) — not tracked by git */
