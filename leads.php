@@ -58,6 +58,13 @@ try {
   $d = $cfg['db'];
   $pdo = new PDO("mysql:host={$d['host']};dbname={$d['name']};charset=utf8mb4", $d['user'], $d['pass'],
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_TIMEOUT => 5]);
+  $pdo->exec("CREATE TABLE IF NOT EXISTS leads (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(120) NOT NULL, phone VARCHAR(40) NOT NULL, email VARCHAR(160) NULL,
+    area VARCHAR(120) NULL, service VARCHAR(120) NULL, message TEXT NULL,
+    source VARCHAR(160) NULL, ip VARCHAR(45) NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4");
   $rows = $pdo->query("SELECT * FROM leads ORDER BY id DESC LIMIT 1000")->fetchAll(PDO::FETCH_ASSOC);
 } catch (Throwable $e) { $err = $e->getMessage(); }
 
