@@ -58,6 +58,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
   <div class="wrap nav">
     <a href="/" class="brand">
       <img src="/assets/img/Aiqon-Quick-Cool-New.png" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
+      <img src="/assets/img/favicon.png?v=<?= $iconv ?>" alt="Aiqon Quick Cool" class="brand-logo-mini" width="44" height="44">
     </a>
     <nav class="menu" id="menu">
       <div class="menu-head"><span class="menu-title">Menu</span><button class="menu-close" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
