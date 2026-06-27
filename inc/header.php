@@ -47,10 +47,10 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 
 <div class="tbar">
   <div class="wrap">
-    <span><i>&#10003;</i> <b>Licensed technicians</b></span><span class="dot"></span>
-    <span><i>&#9733;</i> <b>1-Year warranty</b></span><span class="dot"></span>
-    <span><b>15-min WhatsApp reply</b></span><span class="dot"></span>
-    <span><b>Open Mon to Sun, 8am to 10pm</b></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg> <b>Licensed technicians</b></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg> <b>1-Year warranty</b></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 01-12.6 7.5L3 21l2-5.4A8.5 8.5 0 1121 11.5z"/></svg> <b>15-min WhatsApp reply</b></span>
+    <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> <b>Open Mon to Sun, 8am to 10pm</b></span>
   </div>
 </div>
 
