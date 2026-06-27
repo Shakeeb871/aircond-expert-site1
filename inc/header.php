@@ -25,7 +25,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
 <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
 <meta property="og:type" content="website">
-<meta property="og:image" content="<?= $site_url ?>/assets/img/logo.png">
+<meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png">
 <link rel="icon" href="/assets/img/logo.png?v=<?= $logov ?>" sizes="any">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +46,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <header class="hd" id="hd">
   <div class="wrap nav">
     <a href="/" class="brand">
-      <img src="/assets/img/logo.png?v=<?= $logov ?>" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
+      <img src="/assets/img/Aiqon-Quick-Cool-New.png" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
     </a>
     <nav class="menu" id="menu">
       <div class="menu-head"><span class="menu-title">Menu</span><button class="menu-close" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
@@ -64,7 +64,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
           <h5>Explore</h5>
           <a href="/services/"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span> All Services</a>
           <a href="/#brands"><span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/></svg></span> Aircond By Brand</a>
-          <div class="promo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FCCF08" stroke-width="2"><path d="M12 2l2.4 6.9H22l-5.8 4.2 2.2 6.9L12 16l-6.4 4 2.2-6.9L2 8.9h7.6z"/></svg> <span><b>Annual Maintenance</b> plans. <a href="/amc/" style="color:#fff;text-decoration:underline">See AMC &rarr;</a></span></div>
+          <div class="promo"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00B0F0" stroke-width="2"><path d="M12 2l2.4 6.9H22l-5.8 4.2 2.2 6.9L12 16l-6.4 4 2.2-6.9L2 8.9h7.6z"/></svg> <span><b>Annual Maintenance</b> plans. <a href="/amc/" style="color:#fff;text-decoration:underline">See AMC &rarr;</a></span></div>
         </div>
       </div>
       <a href="/about/"<?= $active==='about' ? ' class="active"' : '' ?>>About</a>
