@@ -21,9 +21,17 @@ RewriteRule ^(inc|data)/ - [F,L]
   Require all denied
 </FilesMatch>
 
-# --- force HTTPS ---
+# --- canonical host: redirect www -> non-www (preferred version) ---
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+# --- force HTTPS (non-www) ---
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# --- drop /index.php from the URL (canonical home) ---
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^ / [L,R=301]
 
 # --- add trailing slash to clean URLs (not files) ---
 RewriteCond %{REQUEST_FILENAME} !-f
