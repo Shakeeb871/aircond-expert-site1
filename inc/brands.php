@@ -1,5 +1,5 @@
 <?php
-/* Reusable brand logos marquee — original colours, transparent background. */
+/* Reusable brand logos — static centered row, each brand shown once. */
 $brand_names = ['Mitsubishi Electric','Panasonic','Hitachi','Daikin','York','Hisense','Midea','Acson','Haier'];
 ?>
 <section class="section brands" id="brands" style="padding:54px 0">
@@ -11,11 +11,11 @@ $brand_names = ['Mitsubishi Electric','Panasonic','Hitachi','Daikin','York','His
     </div>
     <a href="https://wa.me/60123456789" class="btn btn-line"><span class="btn-txt">Ask about your unit</span></a>
   </div>
-  <div class="wrap" style="max-width:none;padding:0">
-    <div class="mq-mask"><div class="brand-marquee">
-      <?php for ($pass = 0; $pass < 2; $pass++): for ($i = 1; $i <= 9; $i++): ?>
-      <div class="blogo"><img src="/assets/img/brands/<?= $i ?>.png" alt="<?= $pass === 0 ? htmlspecialchars($brand_names[$i-1]) : '' ?>" loading="lazy"></div>
-      <?php endfor; endfor; ?>
-    </div></div>
+  <div class="wrap">
+    <div class="brand-row">
+      <?php for ($i = 1; $i <= 9; $i++): ?>
+      <div class="blogo"><img src="/assets/img/brands/<?= $i ?>.png" alt="<?= htmlspecialchars($brand_names[$i-1]) ?>" loading="lazy"></div>
+      <?php endfor; ?>
+    </div>
   </div>
 </section>
