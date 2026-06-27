@@ -1,7 +1,7 @@
 <?php
 $page_title='Areas We Cover';
 $page_desc='Aircond service, repair and installation across Kuala Lumpur and Selangor including KL, Petaling Jaya, Mont Kiara, Bangsar, Subang, Shah Alam, Cheras, Kajang and Klang.';
-$active='coverage'; $canonical='https://www.aircondexpert.my/coverage/';
+$active='coverage'; $canonical='https://aiqonquickcool.com.my/coverage/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

@@ -1,7 +1,7 @@
 <?php
 $page_title='Annual Maintenance Plans (AMC)';
 $page_desc='Annual aircond maintenance plans for Kuala Lumpur and Selangor homes. Scheduled servicing, priority response and no booking each time.';
-$active='amc'; $canonical='https://www.aircondexpert.my/amc/';
+$active='amc'; $canonical='https://aiqonquickcool.com.my/amc/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

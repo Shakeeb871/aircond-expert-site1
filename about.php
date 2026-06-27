@@ -2,7 +2,7 @@
 $page_title='About Aiqon Quick Cool';
 $page_desc='Licensed, in-house aircond technicians serving Kuala Lumpur and Selangor. Honest pricing, all major brands, and a one-year workmanship warranty.';
 $page_keywords='about aircond company Kuala Lumpur and Selangor, licensed aircond technicians, aircond experts Malaysia, trusted aircond service KL';
-$active='about'; $canonical='https://www.aircondexpert.my/about/';
+$active='about'; $canonical='https://aiqonquickcool.com.my/about/';
 $wa='https://wa.me/60123456789';
 include __DIR__.'/inc/header.php';
 ?>

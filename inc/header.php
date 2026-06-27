@@ -3,13 +3,14 @@ $site_name      = 'Aiqon Quick Cool';
 $site_phone     = '+60 12-345 6789';
 $site_phone_raw = '60123456789';
 $wa             = 'https://wa.me/60123456789';
-$site_url       = 'https://www.aircondexpert.my';
+$site_url       = 'https://aiqonquickcool.com.my';
 if (!isset($page_title)) $page_title = '24-Hour Aircond Service, Repair & Installation Malaysia';
 if (!isset($page_desc))  $page_desc  = 'Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All brands, fast WhatsApp reply.';
 if (!isset($active))     $active     = '';
 if (!isset($canonical))  $canonical  = '';
 $cssv = @filemtime(__DIR__ . '/../assets/css/style.css') ?: '1';
 $logov = @filemtime(__DIR__ . '/../assets/img/logo.png') ?: '1';
+$iconv = @filemtime(__DIR__ . '/../assets/img/favicon.png') ?: '1';
 function nav_active($k){ global $active; return $active === $k ? ' active' : ''; }
 ?>
 <!DOCTYPE html>
@@ -22,11 +23,17 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <?php if (!empty($page_keywords)): ?><meta name="keywords" content="<?= htmlspecialchars($page_keywords) ?>">
 <?php endif; ?><?php if ($canonical): ?><link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
 <?php endif; ?>
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
 <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="<?= $site_name ?>">
+<meta property="og:url" content="<?= htmlspecialchars($canonical ?: $site_url . '/') ?>">
 <meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png">
-<link rel="icon" href="/assets/img/logo.png?v=<?= $logov ?>" sizes="any">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0072C6">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png?v=<?= $iconv ?>" sizes="any">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png?v=<?= $iconv ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">

@@ -1,7 +1,7 @@
 <?php
 $page_title='Contact Aiqon Quick Cool';
 $page_desc='Get in touch for aircond service, repair or installation across Kuala Lumpur and Selangor. WhatsApp, call, or send us a message.';
-$active='contact'; $canonical='https://www.aircondexpert.my/contact/';
+$active='contact'; $canonical='https://aiqonquickcool.com.my/contact/';
 $sent = isset($_GET['sent']); $err = isset($_GET['err']);
 include __DIR__.'/inc/header.php';
 ?>

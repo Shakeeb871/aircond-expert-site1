@@ -2,7 +2,7 @@
 $page_title='24-Hour Aircond Service, Repair & Installation';
 $page_desc='Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All major brands, fixed pricing, 15-minute WhatsApp reply.';
 $active='home';
-$canonical='https://www.aircondexpert.my/';
+$canonical='https://aiqonquickcool.com.my/';
 include __DIR__.'/inc/header.php';
 ?>
 

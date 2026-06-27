@@ -2,7 +2,7 @@
 $page_title='Cookie Policy';
 $page_desc='How this website uses cookies and similar technologies.';
 $active='';
-$canonical='https://www.aircondexpert.my/cookie/';
+$canonical='https://aiqonquickcool.com.my/cookie/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

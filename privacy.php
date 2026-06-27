@@ -2,7 +2,7 @@
 $page_title='Privacy Policy';
 $page_desc='How Aiqon Quick Cool collects, uses and protects your personal information.';
 $active='';
-$canonical='https://www.aircondexpert.my/privacy/';
+$canonical='https://aiqonquickcool.com.my/privacy/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

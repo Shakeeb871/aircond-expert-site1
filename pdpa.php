@@ -2,7 +2,7 @@
 $page_title='PDPA Notice';
 $page_desc='Our notice under the Malaysian Personal Data Protection Act 2010.';
 $active='';
-$canonical='https://www.aircondexpert.my/pdpa/';
+$canonical='https://aiqonquickcool.com.my/pdpa/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

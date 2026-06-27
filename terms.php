@@ -2,7 +2,7 @@
 $page_title='Terms of Service';
 $page_desc='The terms that apply when you book a service with Aiqon Quick Cool.';
 $active='';
-$canonical='https://www.aircondexpert.my/terms/';
+$canonical='https://aiqonquickcool.com.my/terms/';
 include __DIR__.'/inc/header.php';
 ?>
 <section class="phero"><div class="glow"></div><div class="wrap">

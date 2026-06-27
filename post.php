@@ -13,7 +13,7 @@ $wa = 'https://wa.me/60123456789';
 $page_title = $p['title'];
 $page_desc  = $p['excerpt'];
 $active      = 'blog';
-$canonical   = 'https://www.aircondexpert.my/blog/' . $slug . '/';
+$canonical   = 'https://aiqonquickcool.com.my/blog/' . $slug . '/';
 include __DIR__ . '/inc/header.php';
 
 // up to 3 other posts for "More Articles"

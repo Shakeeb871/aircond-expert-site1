@@ -9,7 +9,7 @@ if (!isset($services[$slug])) {
 }
 $s = $services[$slug];
 $page_keywords = !empty($s['keywords']) ? implode(', ', $s['keywords']) : '';
-$site_url = 'https://www.aircondexpert.my';
+$site_url = 'https://aiqonquickcool.com.my';
 $wa = 'https://wa.me/60123456789';
 
 $page_title = $s['title'] . ' in Kuala Lumpur and Selangor';
