@@ -16,6 +16,8 @@ $page_title = $s['title'] . ' in Kuala Lumpur and Selangor';
 $page_desc  = $s['desc'];
 $active     = 'services';
 $canonical  = $site_url . '/services/' . $slug . '/';
+$service_ld = ['name' => $s['title'], 'description' => $s['desc']];
+$page_faqs  = !empty($s['faqs']) ? $s['faqs'] : [];
 include __DIR__ . '/inc/header.php';
 
 $benefit_icons = [

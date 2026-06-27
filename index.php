@@ -3,6 +3,13 @@ $page_title='24-Hour Aircond Service, Repair & Installation';
 $page_desc='Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All major brands, fixed pricing, 15-minute WhatsApp reply.';
 $active='home';
 $canonical='https://aiqonquickcool.com.my/';
+$page_faqs = [
+  ['Do you serve my area?', 'We cover Kuala Lumpur, Petaling Jaya, Mont Kiara, Bangsar, Subang Jaya, Shah Alam, Cheras, Kajang and Klang as standard. Outside that, WhatsApp us your postcode and we will quote on a case basis.'],
+  ['How fast can you come?', 'Next-day is standard, and same-day where a slot is open. Emergencies like an active leak or a unit fully down get prioritised, and we tell you the real arrival time.'],
+  ['How does pricing work?', 'Most jobs we can quote on WhatsApp from a photo. Where we cannot, we attend, diagnose and quote on the spot. You approve the price before any work starts.'],
+  ['Do you charge a call-out fee?', 'We confirm any call-out fee before we come, and it is waived when you proceed with the recommended repair. Whatever it is, you always know it upfront.'],
+  ['What brands do you service?', 'All major brands including Daikin, Panasonic, Mitsubishi Electric, York, Acson, Hitachi, Hisense, Haier and Midea, for service, repair and installation.'],
+];
 include __DIR__.'/inc/header.php';
 ?>
 

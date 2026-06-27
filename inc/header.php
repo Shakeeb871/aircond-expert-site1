@@ -28,12 +28,16 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta property="og:description" content="<?= htmlspecialchars($page_desc) ?>">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="<?= $site_name ?>">
+<meta property="og:locale" content="en_MY">
 <meta property="og:url" content="<?= htmlspecialchars($canonical ?: $site_url . '/') ?>">
 <meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="geo.region" content="MY-14">
+<meta name="geo.placename" content="Kuala Lumpur">
 <meta name="theme-color" content="#0072C6">
 <link rel="icon" type="image/png" href="/assets/img/favicon.png?v=<?= $iconv ?>" sizes="any">
 <link rel="apple-touch-icon" href="/assets/img/favicon.png?v=<?= $iconv ?>">
+<?php include __DIR__ . '/schema.php'; ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">

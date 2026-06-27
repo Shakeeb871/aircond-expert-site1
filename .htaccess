@@ -65,3 +65,20 @@ RewriteRule ^(about|contact|coverage|amc|privacy|terms|pdpa|cookie)/?$ $1.php [L
     Header set Cache-Control "public, max-age=15552000"
   </FilesMatch>
 </IfModule>
+
+# --- GZIP compression ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml application/rss+xml
+  AddOutputFilterByType DEFLATE font/ttf font/otf font/woff font/woff2 application/font-woff
+</IfModule>
+
+# --- extra static caching (fonts, ico, gif) ---
+<IfModule mod_expires.c>
+  ExpiresByType image/gif "access plus 6 months"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/woff "access plus 1 year"
+</IfModule>
