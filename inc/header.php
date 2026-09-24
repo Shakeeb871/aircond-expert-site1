@@ -11,6 +11,7 @@ if (!isset($canonical))  $canonical  = '';
 $cssv = @filemtime(__DIR__ . '/../assets/css/style.css') ?: '1';
 $logov = @filemtime(__DIR__ . '/../assets/img/logo.png') ?: '1';
 $iconv = @filemtime(__DIR__ . '/../assets/img/favicon.png') ?: '1';
+$brandv = @filemtime(__DIR__ . '/../assets/img/Aiqon-Quick-Cool-New.png') ?: '1';
 function nav_active($k){ global $active; return $active === $k ? ' active' : ''; }
 ?>
 <!DOCTYPE html>
@@ -30,7 +31,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta property="og:site_name" content="<?= $site_name ?>">
 <meta property="og:locale" content="en_MY">
 <meta property="og:url" content="<?= htmlspecialchars($canonical ?: $site_url . '/') ?>">
-<meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png">
+<meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png?v=<?= $brandv ?>">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="geo.region" content="MY-08">
 <meta name="geo.placename" content="Ipoh">
@@ -58,7 +59,7 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <header class="hd" id="hd">
   <div class="wrap nav">
     <a href="/" class="brand">
-      <img src="/assets/img/Aiqon-Quick-Cool-New.png" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
+      <img src="/assets/img/Aiqon-Quick-Cool-New.png?v=<?= $brandv ?>" alt="Aiqon Quick Cool – 24-Hour Aircond Service" class="brand-logo">
     </a>
     <nav class="menu" id="menu">
       <div class="menu-head"><span class="menu-title">Menu</span><button class="menu-close" id="menuClose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
