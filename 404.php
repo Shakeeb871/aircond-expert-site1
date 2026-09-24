@@ -12,7 +12,7 @@ include __DIR__.'/inc/header.php';
   <div class="btns">
     <a href="/" class="btn btn-navy"><span class="btn-txt">Back to home</span></a>
     <a href="/services/" class="btn btn-line"><span class="btn-txt">Browse services</span></a>
-    <a href="https://wa.me/60123456789" class="btn btn-wa"><span class="btn-txt">WhatsApp us</span></a>
+    <a href="https://wa.me/60199295247" class="btn btn-wa"><span class="btn-txt">WhatsApp us</span></a>
   </div>
 </div></section>
 <?php include __DIR__.'/inc/footer.php'; ?>

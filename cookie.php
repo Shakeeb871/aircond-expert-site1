@@ -15,6 +15,6 @@ include __DIR__.'/inc/header.php';
     <p>This website uses a small number of cookies to make the site work properly and to understand how visitors use it so we can improve it.</p>
     <h2>Managing Cookies</h2>
     <p>You can control or delete cookies through your browser settings. Blocking some cookies may affect how parts of the site work.</p>
-    <p>Questions? Email <a href="mailto:hello@aircondexpert.my">hello@aircondexpert.my</a> or WhatsApp <a href="https://wa.me/60123456789">+60 12-345 6789</a>.</p>
+    <p>Questions? Email <a href="mailto:Aiqonquickcoolsb@gmail.com">Aiqonquickcoolsb@gmail.com</a> or WhatsApp <a href="https://wa.me/60199295247">+60 19-929 5247</a>.</p>
 </div></div></section>
 <?php include __DIR__.'/inc/footer.php'; ?>

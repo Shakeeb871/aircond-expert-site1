@@ -28,7 +28,7 @@ include __DIR__.'/inc/header.php';
       <h1>Fast Reliable AC Repair<br>at Doorstep</h1>
       <p>Keep your home cool and comfortable with expert AC repair, maintenance, and installation services &mdash; available 24/7 at your convenience.</p>
       <div class="hero2-actions">
-        <a href="https://wa.me/60123456789" class="btn btn-y hero2-cta"><span class="btn-txt">Book Appointment</span></a>
+        <a href="https://wa.me/60199295247" class="btn btn-y hero2-cta"><span class="btn-txt">Book Appointment</span></a>
         <div class="hero2-rating">
           <span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 17.8 5.8 20.9l1.6-6.8L2.2 8.9l6.9-.6z"/></svg></span>
           <span class="rate-txt"><b>4.9/5</b> &middot; Rated by 600+ customers</span>
@@ -192,7 +192,7 @@ $inclIcons = [
         <div><b>15 min</b><span>Avg WhatsApp reply</span></div>
         <div><b>9</b><span>Areas covered</span></div>
       </div>
-      <a href="https://wa.me/60123456789" class="btn btn-navy"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Talk to us on WhatsApp</span></a>
+      <a href="https://wa.me/60199295247" class="btn btn-navy"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Talk to us on WhatsApp</span></a>
     </div>
   </div>
 </section>
@@ -233,7 +233,7 @@ $inclIcons = [
       <h2>Don't sweat it &mdash; let our experts keep you cool</h2>
       <p>Aircond not cooling, dripping water or running up your bill? Get a licensed technician at your door, a fixed price agreed first, and cold air back fast.</p>
       <div class="sc-cta">
-        <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
+        <a href="https://wa.me/60199295247" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
       </div>
       <div class="sc-trust">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg> 15-min WhatsApp reply</span>
@@ -252,15 +252,15 @@ $inclIcons = [
     <p class="sub">Limited-time deals on the services our customers book most. WhatsApp us to claim yours.</p>
   </div>
   <div class="wrap"><div class="offers-grid reveal">
-    <a href="https://wa.me/60123456789" class="offer">
+    <a href="https://wa.me/60199295247" class="offer">
       <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/installation.jpg" alt="Installation offer" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="of-cap"><span class="of-tag">Installation</span><h3>Special discount on new aircond installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
-    <a href="https://wa.me/60123456789" class="offer">
+    <a href="https://wa.me/60199295247" class="offer">
       <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/aircond-service.jpg" alt="Maintenance offer" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="of-cap"><span class="of-tag">Maintenance</span><h3>Free 1st-year service with installation</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
-    <a href="https://wa.me/60123456789" class="offer">
+    <a href="https://wa.me/60199295247" class="offer">
       <div class="of-img imgph"><span class="phl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M21 16l-5-5L5 19"/></svg><span>Offer photo</span></span><img src="/assets/img/chemical-wash.jpg" alt="Chemical wash offer" loading="lazy" onerror="this.style.display='none'"></div>
       <div class="of-cap"><span class="of-tag">Chemical wash</span><h3>Cashback on multi-unit chemical wash</h3><span class="go">Claim offer <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
     </a>
@@ -355,7 +355,7 @@ $inclIcons = [
       <h2>Get in touch with our experts</h2>
       <p class="lead">Here are the answers our customers ask for most. Still not sure? Message our team on WhatsApp and a real person replies within 15 minutes.</p>
       <div class="git-cta">
-        <a href="https://wa.me/60123456789" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Ask on WhatsApp</span></a>
+        <a href="https://wa.me/60199295247" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Ask on WhatsApp</span></a>
       </div>
     </div>
     <div class="git-faq reveal">
@@ -376,15 +376,15 @@ $inclIcons = [
     <p class="serving-sub">Local technicians close to you. Not on the list? WhatsApp your postcode and we will quote.</p>
   </div>
   <div class="wrap"><div class="serving-grid">
-    <a href="https://wa.me/60123456789">Kuala Lumpur</a>
-    <a href="https://wa.me/60123456789">Petaling Jaya</a>
-    <a href="https://wa.me/60123456789">Mont Kiara</a>
-    <a href="https://wa.me/60123456789">Bangsar</a>
-    <a href="https://wa.me/60123456789">Subang Jaya</a>
-    <a href="https://wa.me/60123456789">Shah Alam</a>
-    <a href="https://wa.me/60123456789">Cheras</a>
-    <a href="https://wa.me/60123456789">Kajang</a>
-    <a href="https://wa.me/60123456789">Klang</a>
+    <a href="https://wa.me/60199295247">Kuala Lumpur</a>
+    <a href="https://wa.me/60199295247">Petaling Jaya</a>
+    <a href="https://wa.me/60199295247">Mont Kiara</a>
+    <a href="https://wa.me/60199295247">Bangsar</a>
+    <a href="https://wa.me/60199295247">Subang Jaya</a>
+    <a href="https://wa.me/60199295247">Shah Alam</a>
+    <a href="https://wa.me/60199295247">Cheras</a>
+    <a href="https://wa.me/60199295247">Kajang</a>
+    <a href="https://wa.me/60199295247">Klang</a>
   </div></div>
 </section>
 

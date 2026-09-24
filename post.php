@@ -8,7 +8,7 @@ if (!isset($posts[$slug])) {
     exit;
 }
 $p  = $posts[$slug];
-$wa = 'https://wa.me/60123456789';
+$wa = 'https://wa.me/60199295247';
 
 $page_title = $p['title'];
 $page_desc  = $p['excerpt'];

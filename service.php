@@ -10,7 +10,7 @@ if (!isset($services[$slug])) {
 $s = $services[$slug];
 $page_keywords = !empty($s['keywords']) ? implode(', ', $s['keywords']) : '';
 $site_url = 'https://aiqonquickcool.com.my';
-$wa = 'https://wa.me/60123456789';
+$wa = 'https://wa.me/60199295247';
 
 $page_title = $s['title'] . ' in Kuala Lumpur and Selangor';
 $page_desc  = $s['desc'];
@@ -116,7 +116,7 @@ $benefit_icons = [
       <aside class="sd-aside">
         <div class="sd-card">
           <div class="top"><h3>Get a Free Quote</h3><p>Tell us about your <?= htmlspecialchars(strtolower($s['title'])) ?> and we reply fast on WhatsApp.</p></div>
-          <form class="bd lead-form" data-wa="60123456789" action="/api/contact.php" method="post">
+          <form class="bd lead-form" data-wa="60199295247" action="/api/contact.php" method="post">
             <input type="text" name="company" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
             <input type="hidden" name="service" value="<?= htmlspecialchars($s['title']) ?>">
             <div class="bc-field"><label for="sf-name">Full name</label><input id="sf-name" name="name" type="text" placeholder="Your name" required></div>
@@ -133,7 +133,7 @@ $benefit_icons = [
           <div class="top"><h3>Prefer to talk?</h3><p>Reach a real person for a fast reply.</p></div>
           <div class="bd">
             <a href="<?= $wa ?>" class="btn btn-wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6a8 8 0 01-3.7-3.3c-.3-.4-.7-1.1-.7-2 0-1 .5-1.4.7-1.6.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.6 1.5c0 .2 0 .3-.1.4l-.3.4c-.1.1-.3.3-.1.5.1.3.6 1 1.3 1.6.9.8 1.6 1 1.9 1.1.2.1.4.1.5-.1l.5-.6c.2-.2.3-.2.5-.1l1.5.7c.2.1.4.2.4.3.1.1.1.4 0 .6z"/></svg> <span class="btn-txt">Book on WhatsApp</span></a>
-            <a href="tel:60123456789" class="btn btn-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 12-345 6789</span></a>
+            <a href="tel:60199295247" class="btn btn-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg> <span class="btn-txt">Call +60 19-929 5247</span></a>
           </div>
         </div>
       </aside>

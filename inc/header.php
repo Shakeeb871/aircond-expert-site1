@@ -1,8 +1,8 @@
 <?php
 $site_name      = 'Aiqon Quick Cool';
-$site_phone     = '+60 12-345 6789';
-$site_phone_raw = '60123456789';
-$wa             = 'https://wa.me/60123456789';
+$site_phone     = '+60 19-929 5247';
+$site_phone_raw = '60199295247';
+$wa             = 'https://wa.me/60199295247';
 $site_url       = 'https://aiqonquickcool.com.my';
 if (!isset($page_title)) $page_title = '24-Hour Aircond Service, Repair & Installation Malaysia';
 if (!isset($page_desc))  $page_desc  = 'Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All brands, fast WhatsApp reply.';

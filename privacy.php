@@ -19,6 +19,6 @@ include __DIR__.'/inc/header.php';
     <p>We may share limited details with our own technicians to complete your job. We do not pass your data to third-party advertisers.</p>
     <h2>Your Rights</h2>
     <p>You can ask us what information we hold about you, request a correction, or ask us to delete it. Contact us using the details below.</p>
-    <p>Questions? Email <a href="mailto:hello@aircondexpert.my">hello@aircondexpert.my</a> or WhatsApp <a href="https://wa.me/60123456789">+60 12-345 6789</a>.</p>
+    <p>Questions? Email <a href="mailto:Aiqonquickcoolsb@gmail.com">Aiqonquickcoolsb@gmail.com</a> or WhatsApp <a href="https://wa.me/60199295247">+60 19-929 5247</a>.</p>
 </div></div></section>
 <?php include __DIR__.'/inc/footer.php'; ?>
