@@ -111,7 +111,7 @@ if (!empty($service_ld) && is_array($service_ld)) {
     '@type'      => 'Service',
     'serviceType'=> $service_ld['name'] ?? '',
     'provider'   => ['@id' => $ORG_ID],
-    'areaServed' => ['@type' => 'AdministrativeArea', 'name' => 'Klang Valley, Malaysia'],
+    'areaServed' => ['@type' => 'AdministrativeArea', 'name' => 'Ipoh, Perak, Malaysia'],
     'url'        => $canonical ?? ($base . '/'),
   ], $service_ld);
 }

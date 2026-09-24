@@ -12,7 +12,7 @@ $page_keywords = !empty($s['keywords']) ? implode(', ', $s['keywords']) : '';
 $site_url = 'https://aiqonquickcool.com.my';
 $wa = 'https://wa.me/60199295247';
 
-$page_title = $s['title'] . ' in Kuala Lumpur and Selangor';
+$page_title = $s['title'] . ' in Ipoh, Perak Darul Ridzuan';
 $page_desc  = $s['desc'];
 $active     = 'services';
 $canonical  = $site_url . '/services/' . $slug . '/';
@@ -51,7 +51,7 @@ $benefit_icons = [
           <img src="/assets/img/<?= $slug ?>.jpg" alt="<?= htmlspecialchars($s['title']) ?>" loading="lazy" onerror="this.style.display='none'">
         </div>
 
-        <h2>Professional <?= htmlspecialchars($s['title']) ?> in Kuala Lumpur and Selangor</h2>
+        <h2>Professional <?= htmlspecialchars($s['title']) ?> in Ipoh, Perak Darul Ridzuan</h2>
         <?php foreach ($s['intro'] as $para): ?>
           <p><?= htmlspecialchars($para) ?></p>
         <?php endforeach; ?>

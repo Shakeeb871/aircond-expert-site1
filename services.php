@@ -1,7 +1,7 @@
 <?php
 $services = require __DIR__ . '/data/services.php';
 $page_title = 'Our Aircond Services';
-$page_desc  = 'Aircond service, chemical wash, repair, installation, gas top-up and general cleaning across Kuala Lumpur and Selangor. All major brands.';
+$page_desc  = 'Aircond service, chemical wash, repair, installation, gas top-up and general cleaning across Ipoh, Perak Darul Ridzuan. All major brands.';
 $active='services'; $canonical='https://aiqonquickcool.com.my/services/';
 include __DIR__.'/inc/header.php';
 $icons=[
@@ -16,7 +16,7 @@ $icons=[
 <section class="phero"><div class="glow"></div><div class="wrap">
   <div class="crumb"><a href="/">Home</a> <span>/</span> Services</div>
   <h1>Our Aircond Services</h1>
-  <p>From a quick service to a full chemical wash or a new installation, our licensed technicians cover it all across Kuala Lumpur and Selangor.</p>
+  <p>From a quick service to a full chemical wash or a new installation, our licensed technicians cover it all across Ipoh, Perak Darul Ridzuan.</p>
 </div></section>
 <section class="section"><div class="wrap"><div class="svc-grid" style="margin-top:0">
 <?php foreach($services as $slug=>$s): ?>

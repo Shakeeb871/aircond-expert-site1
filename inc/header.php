@@ -5,7 +5,7 @@ $site_phone_raw = '60199295247';
 $wa             = 'https://wa.me/60199295247';
 $site_url       = 'https://aiqonquickcool.com.my';
 if (!isset($page_title)) $page_title = '24-Hour Aircond Service, Repair & Installation Malaysia';
-if (!isset($page_desc))  $page_desc  = 'Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Kuala Lumpur and Selangor. All brands, fast WhatsApp reply.';
+if (!isset($page_desc))  $page_desc  = 'Licensed 24-hour aircond service, repair, chemical wash, gas top-up and installation across Ipoh, Perak Darul Ridzuan. All brands, fast WhatsApp reply.';
 if (!isset($active))     $active     = '';
 if (!isset($canonical))  $canonical  = '';
 $cssv = @filemtime(__DIR__ . '/../assets/css/style.css') ?: '1';
@@ -32,8 +32,8 @@ function nav_active($k){ global $active; return $active === $k ? ' active' : '';
 <meta property="og:url" content="<?= htmlspecialchars($canonical ?: $site_url . '/') ?>">
 <meta property="og:image" content="<?= $site_url ?>/assets/img/Aiqon-Quick-Cool-New.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="geo.region" content="MY-14">
-<meta name="geo.placename" content="Kuala Lumpur">
+<meta name="geo.region" content="MY-08">
+<meta name="geo.placename" content="Ipoh">
 <meta name="theme-color" content="#0072C6">
 <link rel="icon" type="image/png" href="/assets/img/favicon.png?v=<?= $iconv ?>" sizes="any">
 <link rel="apple-touch-icon" href="/assets/img/favicon.png?v=<?= $iconv ?>">

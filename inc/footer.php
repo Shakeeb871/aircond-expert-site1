@@ -15,12 +15,12 @@
     <div class="fgrid">
       <div class="fb">
         <a href="/" class="flogo"><img src="/assets/img/Aiqon-Quick-Cool-New.png" alt="Aiqon Quick Cool – 24-Hour Aircond Service"></a>
-        <p>Licensed 24-hour aircond service, repair and installation across Kuala Lumpur and Selangor. Honest pricing, real warranties and a fast WhatsApp reply, every time.</p>
+        <p>Licensed 24-hour aircond service, repair and installation across Ipoh, Perak Darul Ridzuan. Honest pricing, real warranties and a fast WhatsApp reply, every time.</p>
         <div class="fcontact">
           <a href="tel:+60199295247"><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 2.9a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.9.6 2.9.7a2 2 0 011.7 2z"/></svg></span> +60 19-929 5247</a>
           <a href="mailto:Aiqonquickcoolsb@gmail.com"><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 6 10-6"/></svg></span> Aiqonquickcoolsb@gmail.com</a>
           <div><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span> Mon to Sun, 8am to 10pm</div>
-          <div><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span> Serving Kuala Lumpur and Selangor, Malaysia</div>
+          <div><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span> Serving Ipoh, Perak Darul Ridzuan, Malaysia</div>
           <div><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></span> No. 42 Jalan SCI 1/12, Dataran Sunway City Ipoh, 31150 Ipoh, Perak Darul Ridzuan</div>
           <div><span class="fic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h5M9 17h3"/></svg></span> SSM: 202501034949</div>
         </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="fbot">
-      <span>© <?= date('Y') ?> Aiqon Quick Cool. 24-Hour Aircond Service, Kuala Lumpur and Selangor, Malaysia.</span>
+      <span>© <?= date('Y') ?> Aiqon Quick Cool. 24-Hour Aircond Service, Ipoh, Perak Darul Ridzuan, Malaysia.</span>
       <div class="fbadges">
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Licensed technicians</span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg> 1-year warranty</span>
